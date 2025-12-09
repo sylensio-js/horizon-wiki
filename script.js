@@ -6273,7 +6273,7 @@ x
             home to Lowland traditions as old as the river roots.
         </li>
         <li>
-            <b>Scalding Spear</b> — Citadel of the Desert Clan, its walls
+            <b>Scalding Spear</b> — Capital of the Desert Clan, its walls
             burned golden by the relentless sun.
         </li>
         <li>
