@@ -118,7 +118,7 @@ const articles = {
         <div class="accordion-header" aria-expanded="false">Strategy <span class="chev">▾</span></div>
         <div class="accordion-content">
           <p>From long range, detonate the Glowblast canisters that cover its body with a Plasma sharpshot bow, then close in and use a non-elemental bow to trigger the plasma explosion. After that, destroy one of the electric rattles on its tail and use it as a heavy weapon to stagger the Slitherfang and land critical hits.</p>
-          <p>Another approach is to prime the Slitherfang with Frost from a distance, then close and use the Blast Forge with Sustained Burst to shred it quickly. Activating the hunter tree's Valor Surge immediately before using Blast Forge speeds up the takedown.</p>
+          <p>Another approach is to prime the Slitherfang with freeze from a distance, then close and use the Blast Forge with Sustained Burst to shred it quickly. Activating the hunter tree's Valor Surge immediately before using Blast Forge speeds up the takedown.</p>
           <p>These methods are efficient for both kills and farming runs.</p>        
         </div>
       </div>
@@ -226,7 +226,7 @@ const articles = {
         <div class="accordion-header" aria-expanded="false">Strategy <span class="chev">▾</span></div>
         <div class="accordion-content">
           <p>Because the Apex form is stronger, bring powerful coil-equipped weapons. Use the same fundamentals: destroy Glowblast canisters with Plasma, then finish with non-elemental shots; disable tail rattles to stagger and open critical windows.</p>
-          <p>Priming with Frost and using Blast Forge plus Sustained Burst remains an effective high-damage tactic.</p>
+          <p>Priming with freeze and using Blast Forge plus Sustained Burst remains an effective high-damage tactic.</p>
         </div>
       </div>
     </div>
@@ -742,7 +742,7 @@ const articles = {
       <div class="accordion-item">
         <div class="accordion-header" aria-expanded="false">Strategy <span class="chev">▾</span></div>
         <div class="accordion-content">
-         <p>The Stormbird is vulnerable to Frost and Purgewater. Focus fire on the storm cannon in its chest to disable many ranged attacks, and target wing thrusters to limit its mobility.</p>
+         <p>The Stormbird is vulnerable to freeze and Purgewater. Focus fire on the storm cannon in its chest to disable many ranged attacks, and target wing thrusters to limit its mobility.</p>
         </div>
       </div>
     </div>
@@ -944,7 +944,7 @@ const articles = {
       <div class="accordion-item">
         <div class="accordion-header" aria-expanded="false">Strategy <span class="chev">▾</span></div>
         <div class="accordion-content">
-         <p>The Scorcher is vulnerable to Frost and Electricity. Disable it by destroying the power cell on its lower back to stun it, then destroy the mine launcher to stop minelaying. Use Frost weapons to slow it, and burst Purgewater canisters on its back to neutralize its fire attacks.</p>
+         <p>The Scorcher is vulnerable to freeze and Electricity. Disable it by destroying the power cell on its lower back to stun it, then destroy the mine launcher to stop minelaying. Use freeze weapons to slow it, and burst Purgewater canisters on its back to neutralize its fire attacks.</p>
         </div>
       </div>
     </div>
@@ -1108,11 +1108,11 @@ const articles = {
         <div class="attack-list">
   <div class="attack-card">
     <h3>Cleaving Ice</h3>
-    <p>slashes with Frost-infused claws. This attack cannot be disabled.</p>
+    <p>slashes with Freeze-infused claws. This attack cannot be disabled.</p>
   </div>
   <div class="attack-card">
     <h3>Frost Jaw</h3>
-    <p>extends its neck to bite with a Frost-infused jaw. This attack cannot be disabled.</p>
+    <p>extends its neck to bite with a Freeze-infused jaw. This attack cannot be disabled.</p>
   </div>
   <div class="attack-card">
     <h3>Shell Slam</h3>
@@ -1120,7 +1120,7 @@ const articles = {
   </div>
   <div class="attack-card">
     <h3>Ice Whip</h3>
-    <p>lashes a Frost-infused tail for heavy damage and knockback. This attack cannot be disabled.</p>
+    <p>lashes a Freeze-infused tail for heavy damage and knockback. This attack cannot be disabled.</p>
   </div>
   <div class="attack-card">
     <h3>Kinetic Slam</h3>
@@ -1132,11 +1132,11 @@ const articles = {
   </div>
   <div class="attack-card">
     <h3>Shivering Barrage</h3>
-    <p>fires three Frost projectiles that explode and leave Frost pools. This attack cannot be disabled.</p>
+    <p>fires three Freeze projectiles that explode and leave Frost pools. This attack cannot be disabled.</p>
   </div>
   <div class="attack-card">
     <h3>Glacial Salvo</h3>
-    <p>while boosted, the shell fires Frost projectiles independently; destroy the shell to stop this.</p>
+    <p>while boosted, the shell fires Freeze projectiles independently; destroy the shell to stop this.</p>
   </div>
 </div>
         <p>When low on health, the Shellsnapper will activate its kinetic dynamo and its shell will turn from light blue to a deep orange.</p>           
@@ -1810,7 +1810,7 @@ const articles = {
   <div class="accordion">
     <div class="accordion-item">
       <div class="accordion-header" aria-expanded="false">Attacks & Behavior <span class="chev">▾</span></div>
-      x
+<div class="accordion-content>
       <p>The Skydrifter will often be found airborne scanning for targets, so it's very unlikely you're gonna be able to sneak up to it</p>
       <div class="attack-list">
   <div class="attack-card">
@@ -1888,7 +1888,7 @@ const articles = {
   <div class="accordion">
     <div class="accordion-item">
       <div class="accordion-header" aria-expanded="false">Attacks & Behavior <span class="chev">▾</span></div>
-      x
+<div class="accordion-content>
       <p>The Skydrifter will often be found airborne scanning for targets, so it's very unlikely you're gonna be able to sneak up to it</p>
       <div class="attack-list">
   <div class="attack-card">
@@ -1992,7 +1992,7 @@ const articles = {
     <div class="accordion">
     <div class="accordion-item">
       <div class="accordion-header" aria-expanded="false">Attacks & Behavior <span class="chev">▾</span></div>
-      x
+<div class="accordion-content>
       <div class="attack-list">
   <div class="attack-card">
     <h3>Lunging Crunch</h3>
@@ -2059,7 +2059,7 @@ const articles = {
     <div class="accordion">
     <div class="accordion-item">
       <div class="accordion-header" aria-expanded="false">Attacks & Behavior <span class="chev">▾</span></div>
-      x
+<div class="accordion-content>
       <div class="attack-list">
   <div class="attack-card">
     <h3>Lunging Crunch</h3>
@@ -2226,7 +2226,7 @@ x
     <div class="accordion">
     <div class="accordion-item">
       <div class="accordion-header" aria-expanded="false">Attacks & Behavior <span class="chev">▾</span></div>
-      x
+<div class="accordion-content>
       <p>It will often be found along other machines, and not in its own independent site.</p>
       <div class="attack-list">
   <div class="attack-card">
@@ -2326,7 +2326,7 @@ x
     <div class="accordion">
     <div class="accordion-item">
       <div class="accordion-header" aria-expanded="false">Attacks & Behavior <span class="chev">▾</span></div>
-      x
+<div class="accordion-content>
       <p>The Salvo cannons on its sides will fire independently of the Tremortusk's actions every 13 seconds, and the shots can knock you down instantly and have a large radius.</p>
       <div class="attack-list">
   <div class="attack-card">
@@ -2422,7 +2422,7 @@ x
     <div class="accordion">
     <div class="accordion-item">
       <div class="accordion-header" aria-expanded="false">Attacks & Behavior <span class="chev">▾</span></div>
-      x
+<div class="accordion-content>
       <p>The Salvo cannons on its sides will fire independently of the Tremortusk's actions every 13 seconds, and the shots can knock you down instantly and have a large radius.</p>
       <div class="attack-list">
   <div class="attack-card">
@@ -5562,6 +5562,33 @@ x
   </div>
   </article>
 `,
+
+"fire": `
+
+
+
+
+
+
+
+<article id="fire">
+  <h1 class="title">Fire</h1>
+   <section class="infobox">
+   <p>Fire is one of the original 6 elements transferred from <em>Horizon: Zero Dawn</em>. Applying Fire to an enemy's status limit produces the Burning state, which deals damage over time directly to its health based on its size and immunity.</p>
+   </section>
+
+   <div class="accordion">
+    <div class="accordion-item">
+     <div class="accordion-header" aria-expanded="false">Gameplay <span class="chev">▾</span></div>
+     <div class="accordion-content">
+     <p>Fire damage can be dealt using Fire Arrows from the Hunter Bow or Warrior Bow, Fire Bombs from the Blastsling, Fire Tripwires from the Tripcaster, Fire Spikes from Spike Throwers, and Fire Canister Harpoons from Ropecasters. Heavy weapons such as the Fire Repeater, Inferno Bomb Launcher, Blaze Bomb Launcher, and Firespitter also inflict Fire damage and buildup.</p>
+     <p>In Aloy's case, taking fire-based attacks and stepping in pools of fire or lava builds up the Burning state. Once applied, she will take ~150 damage over a 12 second duration.</p>
+     </div>
+    </div>
+   </div>
+   </article>
+`,
+ 
 "acid": `
 
 
@@ -5573,7 +5600,7 @@ x
 <article id="acid">
   <h1 class="title">Acid (Corrosion)</h1>
    <section class="infobox">
-   <p>Acid (also known as corrosion) is one of the new elements introduced in <em>Horizon: Forbidden West</em>. Applying Acid to an enemy's status limit produces the Corroded state, which deals damage over time to its health and armor plating. If applied long enough, armor will start to break off. While the Corroding status is active, armor will be significantly weakened and can break off with just one arrow.</p>
+   <p>Acid (also known as corrosion) is one of the 4 new elements introduced in <em>Horizon: Forbidden West</em>. Applying Acid to an enemy's status limit produces the Corroded state, which deals damage over time to its health and armor plating. If applied long enough, armor will start to break off. While the Corroding status is active, armor will be significantly weakened and can break off with just one arrow.</p>
    </section>
 
   <div class="accordion">
@@ -5587,22 +5614,10 @@ x
 
   <div class="accordion">
    <div class="accordion-item">
-    <div class="accordion-header" aria-expanded="false">Machines that're Weak to acid <span class="chev">▾</span></div>
+    <div class="accordion-header" aria-expanded="false">Gameplay <span class="chev">▾</span></div>
     <div class="accordion-content">
-     <ul>
-      <li><strong>Normal Scrounger</strong>
-      <li><strong>Plowhorn</strong>
-      <li><strong>Normal/Apex Shell-Walker</strong>
-      <li><strong>Normal/Apex Grimhorn</strong>
-      <li><strong>Normal Ravager</strong>
-      <li><strong>Normal Rollerback</strong>
-      <li><strong>Normal/Apex Behemoth</strong>
-      <li><strong>Normal/Apex Shellsnapper</strong>
-      <li><strong>Normal/Apex Stormbird</strong>
-      <li><strong>Normal/Apex Thunderjaw</strong>
-      <li><strong>Apex Slaughterspine</strong>
-      <li><strong>Specter</strong>
-      <li><strong>Specter Prime</strong>
+     <p>Acid damage can be dealt using Acid Arrows from the Hunter or Warrior Bow, Acid Shredders from Shredder Gauntlet, Acid Bombs from the Blastsling, and Acid Canister Harpoons from the Ropecaster. Additionally, the Acidspitter, Acid Bomb Launcher, and Acid Traps also inflict Acid damage. Applying Acid to an enemy's status limit produces the Corroding effect, which deals damage over time to its health and armor plating. The additional protection from armor plating is reduced, and critical hit chance is increased. Spikes from the Spike Thrower and Ropes and Canister Harpoons from the Ropecaster will also penetrate armor without having to be fully drawn.</p>
+     <p>In Aloy's case, taking Acid damage or stepping in pools of Acid builds up the Corroded state. Once in it, she will take 100 damage over 30 seconds and all outfit resistances are reduced by 40%.</p>
     </div>
    </div>
   </div>
@@ -5615,47 +5630,34 @@ x
 
 `,
 
-"frost": `
+"freeze": `
 
 
 
 
 
 
-<article id="frost">
-  <h1 class="title">Frost</h1>
+<article id="freeze">
+  <h1 class="title">Freeze</h1>
    <section class="infobox">
-    <p>Frost is one of the elements transferred from <em>Horizon: Zero Dawn</em>. Applying Frost to an enemy's status limit produces the Brittle state, which slows the enemy's movement and increases its susceptibility to direct damage by up to 300%, and negates additional defense provided by armor.</p>
+    <p>Freeze is one of the original 6 elements transferred from <em>Horizon: Zero Dawn</em>. Applying Frost to an enemy's status limit produces the Brittle state, which slows the enemy's movement and increases its susceptibility to direct damage by up to 300%, and negates additional defense provided by armor.</p>
    </section>
 
   <div class="accordion">
    <div class="accordion-item">
     <div class="accordion-header" aria-expanded="false">Strategy <span class="chev">▾</span></div>
     <div class="accordion-content">
-     <p>Frost is one of the elements that just works with any machine. Since the status effect itself doesn't do any damage, its boosting capabilities won't be reduced by machine strengths.</p>
+     <p>Freeze is one of the elements that just works with any machine. Since the status effect itself doesn't do any damage, its boosting capabilities won't be reduced by machine strengths.</p>
     </div>
    </div>
   </div>
 
   <div class="accordion">
    <div class="accordion-item">
-    <div class="accordion-header" aria-expanded="false">Machines that're Weak to frost <span class="chev">▾</span></div>
+    <div class="accordion-header" aria-expanded="false">Machines that're Weak to freeze <span class="chev">▾</span></div>
     <div class="accordion-content">
-     <ul>
-     <li><strong>Normal Scrounger</strong>
-      <li><strong>Plowhorn</strong>
-      <li><strong>Normal/Apex Shell-Walker</strong>
-      <li><strong>Normal/Apex Grimhorn</strong>
-      <li><strong>Normal Ravager</strong>
-      <li><strong>Normal Rollerback</strong>
-      <li><strong>Normal/Apex Behemoth</strong>
-      <li><strong>Normal/Apex Shellsnapper</strong>
-      <li><strong>Normal/Apex Stormbird</strong>
-      <li><strong>Normal/Apex Thunderjaw</strong>
-      <li><strong>Apex Slaughterspine</strong>
-      <li><strong>Specter</strong></li>
-      <li><strong>Specter Prime</strong></li>
-     </ul>
+      <p>Frost damage can be dealt using Frost Arrows from the Hunter or Warrior Bow, Frost Bombs from the Blastsling, Frost Bolts from the Boltblaster, and Frost Canister Harpoons from the Ropecaster.</p>
+      <p>In Aloy's case, taking Frost damage builds up the Brittle state. Once applied, she takes 20% additional damage for 25 seconds.</p>
     </div>
    </div>
   </div>
@@ -5665,6 +5667,115 @@ x
 
 
 
+`,
+
+"purgewater": `
+
+
+
+
+
+
+<article id="purgewater">
+  <h1 class="title">Purgewater</h1>
+  <section class="infobox">
+   <p>Purgewater is one of the 4 new elements in <em>Horizon: Forbidden West</em>. Applying Purgewater to an enemy's status limit produces the Drenched state, which completely disables any elemental attacks it may have.</p>
+  </section>
+
+  <div class="accordion">
+   <div class="accordion-item">
+    <div class="accordion-header" aria-expanded="false">Strategy <span class="chev">▾</span></div>
+    <div class="accordion-content">
+     <p>Purgewater is best used against any machine that has a lot of elemental variety in its attacks, but other than that the status effect is pretty underwhelming.</p>
+    </div>
+   </div>
+  </div>
+
+<div class="accordion">
+   <div class="accordion-item">
+    <div class="accordion-header" aria-expanded="false">Gameplay <span class="chev">▾</span></div>
+    <div class="accordion-content">
+    <p>Purgewater damage can be dealt using Purgewater Arrows from the Hunter Bow, Purgewater Bombs from the Blastsling, and Purgewater Canister Harpoons from the Ropecaster. In addition to weapon ammunition, Purgewater Traps also apply Purgewater Damage.</p>
+    <p>In Aloy's case, taking Purgewater damage or stepping in pools of Purgewater builds up to the Drenched state. In it, all elemental weapons deal reduced damage and cannot inflict elemental buildup over the course of 25 seconds.</p>
+    </div>
+   </div>
+  </div>
+   </article>
+
+`,
+
+"plasma": `
+
+
+
+
+
+
+<article id="plasma">
+  <h1 class="title">Plasma</h1>
+  <section class="infobox">
+  <p>Plasma is one of the 4 new elements in <em>Horizon: Forbidden West</em>. Applying Plasma damage to an enemy's status limit produces the Plasma Blast state, which after the state wears off, explodes and deals additional damage to the target. The explosion damage and radius can be increased by dealing additional damage for the duration of the state, which is represented by a bar next to the Plasma Blast state icon.</p>
+  </section>
+
+  <div class="accordion">
+   <div class="accordion-item">
+    <div class="accordion-header" aria-expanded="false">Gameplay <span class="chev">▾</span></div>
+    <div class="accordion-content">
+     <p>Plasma damage can be dealt using Plasma Precision Arrows from the Sharpshot Bow, Plasma Bolts from the Boltblaster, Plasma Spikes from the Spike Thrower, and Plasma Ropes and Plasma Canister Harpoons from the Ropecaster. Additionally, Plasma damage can be inflicted with the Plasma Bomb Launcher, Plasma Cannon, Plasma Spine Launcher, and Plasma Lancer.</p>
+     <p>In Aloy's case, taking Plasma damage or stepping in pools of Plasma builds up to the Plasma Blast state. In it, the state lasts for 12 seconds before detonating and dealing 35% damage of her maximum health. However it is possible to avoid taking damage from the explosion. When the sound of plasma goes silent after timer reaches 0, player can use dodge. The explosion will stagger Aloy but won't damage her.</p>
+    </div>
+   </div>
+  </div>
+   </article>
+`,
+
+"shock": `
+
+
+
+
+
+
+<article id="shock">
+  <h1 class="title">Shock</h1>
+  <section class="infobox">
+  <p>Shock is one of the original 6 elements transferred from <em>Horizon: Zero Dawn</em>. Applying Shock to an enemy's status limit produces the Shocked state, which temporarily immobilitizes the target and makes them vulnerable to critical attacks.</p>
+  </section>
+  
+  <div class="accordion">
+   <div class="accordion-item">
+    <div class="accordion-header" aria-expanded="false">Gameplay <span class="chev">▾</span></div>
+    <div class="accordion-content">
+    <p>Shock damage can be dealt using Shock Arrows from the Hunter or Warrior Bow, Shock Shredders from the Shredder Gauntlet, Shock Tripwires from the Tripcaster, Shock Bolts from the Boltblaster, and Shock Ropes or Shock Canister Harpoons from the Ropecaster. In addition to weapon ammunition, Vertical Shock Traps also apply shock damage, along with the Tremortusk Shock Cannon and Slitherfang Electric Rattle.</p>
+    <p>In Aloy's case, taking Shock damage or stepping in pools of electricity will build up the Shocked state. Once applied, she will be stunned for a second, knocking her to the ground.</p>
+    </div>
+   </div>
+  </div>
+   </article>
+`,
+
+"adhesive": `
+
+
+
+
+
+
+<article id="adhesive">
+  <h1 class="title">Adhesive</h1>
+  <section class="infobox">
+  <p>Adhesive is one of the 4 new elements introduced to <em>Horizon: Forbidden West</em>. Applying Adhesive to an enemy's status limit produces the Slowed state, which reduces their movement speed and prevents them jumping, sprinting, or charging, and instantly grounds any flying machine. This will also disable certain attacks that rely on fast movements. Machines also cannot swim underwater and will be forced to surface; the same applies to those capable of burrowing underground.</p>
+  </section>
+
+  <div class="accordion">
+   <div class="accordion-item">
+    <div class="accordion-header" aria-expanded="false">Gameplay <span class="chev">▾</span></div>
+    <div class="accordion-content">
+    <p>Against Aloy, this effect lasts for 12 seconds and hinders her mobility and prevents her from jumping. Performing dodge rolls will cause her to stumble. Other humans in this state also suffer from slower movement and the inability to run or dodge. Humans capable of using acrobatic attacks will have this ability disabled during the duration.</p>
+    </div>
+   </div>
+  </div>
+   </article>
 `,
 
 "rost": `
@@ -5699,7 +5810,7 @@ x
 
   <section class="sacrifice">
     <h3>Final Sacrifice</h3>
-    <p>When the Eclipse cult attacked the Proving ceremony, Rost made the ultimate sacrifice to save Aloy's life. He sacrificed himself to ensure Aloy could escape and fulfill her destiny. His final act was one of pure love and selflessness, completing his journey from vengeance to redemption.</p>
+    <p>When the Eclipse cult attacked the Proving ceremony, Rost made the ultimate decision to save Aloy's life. He sacrificed himself to ensure Aloy could escape and fulfill her destiny. His final act was one of pure love and selflessness, completing his journey from vengeance to redemption.</p>
   </section>
 </article>
 
@@ -5935,12 +6046,268 @@ x
 </article>
 `,   
 
-}
+"carja": `
 
 
 
 
-;
+
+<article id="carja" class="theme-lore">
+
+    <h1 class="title">Carja Tribe</h1>
+    <p class="lead">
+        A powerful desert empire known for its devotion to the Sun, advanced architecture,
+        metalworking traditions, and a deep, often turbulent political history.
+    </p>
+
+    <h2 class="section-header">Overview</h2>
+    <p>
+        The Carja are one of the most influential tribes in the world, centered in the city of Meridian.
+        Their society is built around worship of the Sun, a strict but refined social hierarchy,
+        and a legacy of exploration, scholarship, and artistry.
+    </p>
+
+    <h2 class="section-header">History</h2>
+    <p>
+        The Carja Empire expanded by exploring old-world ruins, establishing trade routes,
+        and consolidating spiritual authority. Their darkest period came under Jiran,
+        the Mad Sun-King, whose Red Raids devastated neighboring tribes and ruined their reputation.
+    </p>
+    <p>
+        His son, Sun-King Avad, overthrew him with the help of sympathetic tribes,
+        ending the Raids and beginning a new era of peace. However, the Shadow Carja—
+        loyalists who fled west—remain a lasting reminder of the kingdom’s fracture.
+    </p>
+
+    <h2 class="section-header">Culture & Beliefs</h2>
+    <p>
+        Carja culture is deeply rooted in solar worship. Sun-Priests interpret celestial signs,
+        rituals mark seasonal changes, and politics are intertwined with religious symbolism.
+        Artisans and scholars are highly respected, producing some of the finest craftsmanship
+        among all tribes.
+    </p>
+    <ul>
+        <li>Sun worship drives spiritual and political life.</li>
+        <li>Festivals and ceremonies are synchronized with the Sun's path.</li>
+        <li>Carja artisans craft exquisite armor, weapons, and architecture.</li>
+        <li>Explorers and scholars frequently study old-world relics.</li>
+    </ul>
+
+    <h2 class="section-header">Factions</h2>
+    <p>
+        The Carja tribe is divided into several political and spiritual groups:
+    </p>
+    <ul>
+        <li><b>Carja in Light</b> — Followers of Avad and his reformed rule.</li>
+        <li><b>Shadow Carja</b> — Exiles who supported Jiran and fled to the West.</li>
+        <li><b>Sun-Priests</b> — Religious leaders who interpret divine meaning.</li>
+        <li><b>Vanguard</b> — Elite Oseram soldiers sworn to defend Meridian.</li>
+    </ul>
+
+    <h2 class="section-header">Major Locations</h2>
+    <ul>
+        <li><b>Meridian</b> — The capital city, centerpiece of Carja civilization.</li>
+        <li><b>Sunfall</b> — Home of the Shadow Carja.</li>
+        <li><b>Barren Light</b> - An outpost on the western edge of the Sundom.</li>
+        <li><b>Daytower</b> — A fortified outpost guarding the valley.</li>
+    </ul>
+
+    <h2 class="section-header">Notable Characters</h2>
+    <ul>
+        <li><b>Sun-King Avad</b> — The reformer who ended the Red Raids.</li>
+        <li><b>Jiran</b> — The Mad Sun-King responsible for the Raids.</li>
+        <li><b>Nasadi</b> — Avad’s mother and respected royal figure.</li>
+        <li><b>Vanasha</b> — A spy working to stabilize the kingdom.</li>
+    </ul>
+
+</article>
+
+
+`,
+
+"tenakth": `
+
+
+
+
+
+<article id="tenakth" class="theme-lore">
+
+    <h1 class="title">Tenakth Tribe</h1>
+
+    <p class="lead">
+        Born from shattered stones and roaring winds, the Tenakth are a people shaped by survival,
+        strength, and memory. To understand them is to listen to the whispers carried through the canyons —
+        the tales etched not only in rock, but in the hearts of warriors.
+    </p>
+
+    <h2 class="section-header">Origins of the Three Clans</h2>
+    <p>
+        Long before the world remembered its name, the land of cliffs and mesas was claimed by many,
+        but held by none. The Tenakth say that in those days the mountains themselves were alive,
+        testing all who entered. Only those who stood unbroken earned the right to stay.
+    </p>
+
+    <p>
+        When the old world fell silent, those who survived its fire scattered across the broken west.
+        Three great houses rose from those fragments, each forged by its own story:
+    </p>
+
+    <ul>
+        <li>
+            <b>Sky Clan</b> — dwellers of high places, guardians of the storm-winds, known for
+            their unyielding vigilance.
+        </li>
+        <li>
+            <b>Desert Clan</b> — wanderers of the dunes who learned to follow the shifting sands,
+            reading the land like scripture.
+        </li>
+        <li>
+            <b>Lowland Clan</b> — river-bound survivors who turned swamp and floodplain into their stronghold,
+            patient and resilient as the waters they command.
+        </li>
+    </ul>
+
+    <p>
+        Together they became the Tenakth — “the Ones Who Endure.”  
+        And endurance, more than any weapon, became their badge of honor.
+    </p>
+
+    <h2 class="section-header">The Way of Strength</h2>
+    <p>
+        Among the Tenakth, strength is not merely physical. It is a fire that lives inside the soul,
+        proven through hardship and reaffirmed through battle. Every child of the clans grows up
+        hearing the old proverb:
+    </p>
+
+    <p style="font-style:italic; text-align:center;">
+        “The mountain remembers only those who do not fall.”
+    </p>
+
+    <p>
+        Trials define their youth. Rituals define their adulthood.  
+        Scars are treated not as wounds, but as the verses of one's own story.
+    </p>
+
+    <p>
+        Their warriors carve lines, symbols, and marks into their armor —
+        each one a reminder of a battle survived, a storm outlasted, a lesson learned
+        in blood or in triumph. To wear armor without such marks is to walk without a past.
+    </p>
+
+    <h2 class="section-header">Marshal Tradition</h2>
+    <p>
+        When the clans stand divided, the land suffers; but when they stand united,
+        the west becomes unbreakable.  
+        Thus was born the institution of the Marshals —
+        warriors chosen from each clan to mediate disputes, protect sacred sites,
+        and represent their people under the banner of unity.
+    </p>
+
+    <p>
+        The choosing of a Marshal is an event spoken of with reverence.  
+        A warrior must prove not only strength, but clarity of purpose,
+        wisdom of judgment, and loyalty to the Tenakth above clan.
+    </p>
+
+    <p>
+        Their armor bears symbols of all three clans —  
+        a living reminder that the Tenakth do not rise through conquest,
+        but through balance.
+    </p>
+
+    <h2 class="section-header">Regalla's Rebellion</h2>
+    <p>
+        Yet unity is a fragile bond.  
+        Tales still travel the canyons of the marshal who turned her back on the throne:
+        <b>Regalla</b>, a warrior of unmatched fury.
+    </p>
+
+    <p>
+        Some say she was a storm given human form.  
+        Others say she was the very spirit of rebellion awakened.
+    </p>
+
+    <p>
+        She believed the Tenakth had grown weak under Karja influence,
+        that the old ways — the ways of absolute strength — were fading.
+        Her uprising split the land, pitting warriors against warriors,
+        and casting doubt upon the very meaning of endurance.
+    </p>
+
+    <p>
+        Though her rebellion failed, her story lingers as a warning:
+        that even mountains can crack if struck at the right fault.
+    </p>
+
+    <h2 class="section-header">Culture of the Clans</h2>
+    <p>
+        The Tenakth live close to the land, drawing from it lessons rather than resources.
+        Their stories are bound to the landscape — carved into cairns,
+        etched into standing stones, whispered by the canyon winds.
+    </p>
+
+    <ul>
+        <li>
+            <b>Ritual Combat</b> — A peaceful settlement is not complete without a duel
+            to determine honor. These battles are swift, symbolic, and deeply respected.
+        </li>
+        <li>
+            <b>Stone-Speaking</b> — Elders read the fractures of ancient boulders,
+            claiming the stones remember the world as it once was.
+        </li>
+        <li>
+            <b>Memory Marks</b> — Tattoos and armor carvings act as living archives,
+            telling a warrior’s personal saga.
+        </li>
+        <li>
+            <b>Clan Trials</b> — Young warriors must endure physical and mental tests
+            to earn their place among the Tenakth.
+        </li>
+    </ul>
+
+    <h2 class="section-header">Major Holdings</h2>
+    <ul>
+        <li>
+            <b>Thornmarsh</b> — A settlement of reeds, water, and shadowy marshland,
+            home to Lowland traditions as old as the river roots.
+        </li>
+        <li>
+            <b>Scalding Spear</b> — Citadel of the Desert Clan, its walls
+            burned golden by the relentless sun.
+        </li>
+        <li>
+            <b>Bulwark</b> — The Sky Clan’s impenetrable cliff fortress,
+            said to have stood unchanged since the first days after the Fall.
+        </li>
+    </ul>
+
+    <h2 class="section-header">Notable Figures</h2>
+    <ul>
+        <li>
+            <b>Chief Hekarro</b> — A leader who seeks unity without sacrificing strength.
+        </li>
+        <li>
+            <b>Regalla</b> — The rebel marshal whose fury nearly split the west in two.
+        </li>
+        <li>
+            <b>Drakka</b> — A young warrior who embodies the restless fire of his clan.
+        </li>
+        <li>
+            <b>Kotallo</b> — The warrior who lost an arm but not his spirit,
+            a living symbol of the Tenakth creed: “What is broken can endure.”
+        </li>
+    </ul>
+
+</article>
+`
+
+};
+
+
+
+
+
 
 /* Utility: close search results */
 function closeSearchResults() {
@@ -5969,17 +6336,24 @@ function showSearchMatches(query) {
   }
   
   function getArticleType(id) {
-    if (['acid', 'frost'].includes(id)) return 'Element';
-    if (['rost', 'GAIA', 'sun-king avad', 'varl'].includes(id)) return 'Lore';
-    return 'Machine';
+  if (['acid', 'freeze', 'fire', 'plasma', 'shock', 'purgewater', 'adhesive'].includes(id)) {
+    return 'Element';
   }
-  
+  if (['rost', 'GAIA', 'sun-king avad', 'varl', 'elisabet sobeck'].includes(id)) {
+    return 'Character'; 
+  }
+  if (['carja', 'tenakth'].includes(id)) {
+    return 'Lore';
+  }
+  return 'Machine';
+}  
   function matchesCategory(id, query) {
     const type = getArticleType(id).toLowerCase();
     const q = query.toLowerCase();
     
     if (q === 'machines' || q === 'machine') return type === 'machine';
     if (q === 'elements' || q === 'element') return type === 'element';
+    if (q === 'characters' || q === 'character') return type === 'character';
     if (q === 'lore') return type === 'lore';
     return false;
   }
@@ -5993,7 +6367,7 @@ function showSearchMatches(query) {
     const categoryMatches = matchesCategory(id, query);
     
     // For category searches, ONLY show category matches
-    if (['machines', 'elements', 'lore'].includes(query.toLowerCase())) {
+    if (['machines', 'elements', 'characters', 'lore'].includes(query.toLowerCase())) {
       if (categoryMatches) {
         matches.push({ 
           id, 
@@ -6033,13 +6407,16 @@ function showSearchMatches(query) {
     return;
   }
 
-  // Sort alphabetically only
+  // Sort by priority first, then alphabetically
   matches.sort((a, b) => {
+    if (a.priority !== b.priority) {
+      return a.priority - b.priority;
+    }
     return a.title.localeCompare(b.title);
   });
 
   // For category searches, show more results
-  const isCategory = ['machines', 'elements', 'lore'].includes(query.toLowerCase());
+  const isCategory = ['machines', 'elements', 'characters', 'lore'].includes(query.toLowerCase());
   const limit = isCategory ? 15 : 8;
   const limitedMatches = matches.slice(0, limit);
 
@@ -6098,6 +6475,16 @@ function selectHighlightedResult() {
   }
 }
 
+/* Lazy load article content */
+function lazyLoadArticle(id) {
+  return new Promise((resolve) => {
+    // Simulate network delay for demonstration
+    setTimeout(() => {
+      resolve(articles[id]);
+    }, Math.random() * 200 + 100);
+  });
+}
+
 /* Load article by id (inject into articleContainer) */
 function loadArticle(id) {
   if (!articles[id]) return;
@@ -6111,7 +6498,8 @@ function loadArticle(id) {
   // Add loading state
   articleContainer.innerHTML = '<div class="loading">Loading...</div>';
   
-  setTimeout(() => {
+  // Lazy load the article
+  lazyLoadArticle(id).then((content) => {
     // fade out home
     homeSection.classList.add('fade-out');
     
@@ -6120,7 +6508,7 @@ function loadArticle(id) {
       homeSection.classList.remove('fade-out');
       
       // inject article HTML
-      articleContainer.innerHTML = articles[id];
+      articleContainer.innerHTML = content;
       autoLinkCapitalizedWords(articleContainer, id);
       // init UI bits inside article
       applySynonymLinks(articleContainer);
@@ -6652,7 +7040,7 @@ function autoLinkCapitalizedWords(container, currentID) {
 const linkSynonyms = {
     "acid": ["corrosion", "corroding"],
     "fire": ["heat", "burning"],
-    "frost": ["freeze", "brittle"],
+    "freeze": ["freeze", "brittle"],
     "plasma": ["charged", "energized"],
     "shock": ["electricity", "shocked"],
     "purgewater": ["drenched", "wet"],
@@ -6663,6 +7051,9 @@ const linkSynonyms = {
 // Apply auto-linking for synonyms after article loads - safer DOM-based approach
 function applySynonymLinks(container) {
     if (!container) return;
+    
+    // Get current article ID to prevent self-linking
+    const currentArticleId = container.querySelector('article')?.id;
     
     // Create a map for faster lookup
     const synonymMap = new Map();
@@ -6704,17 +7095,20 @@ function applySynonymLinks(container) {
         
         words.forEach(word => {
             const lowerWord = word.toLowerCase();
-            if (synonymMap.has(lowerWord)) {
+            const targetArticleId = synonymMap.get(lowerWord);
+            
+            // Don't auto-link if synonym points to the same article we're currently viewing
+            if (synonymMap.has(lowerWord) && targetArticleId !== currentArticleId) {
                 hasChanges = true;
                 const a = document.createElement('a');
-                a.href = `#${synonymMap.get(lowerWord)}`;
+                a.href = `#${targetArticleId}`;
                 a.className = 'auto-link';
                 a.textContent = word;
                 
                 a.addEventListener('click', e => {
                     e.preventDefault();
-                    if (typeof loadArticle === 'function') loadArticle(synonymMap.get(lowerWord));
-                    else location.hash = synonymMap.get(lowerWord);
+                    if (typeof loadArticle === 'function') loadArticle(targetArticleId);
+                    else location.hash = targetArticleId;
                 });
                 
                 frag.appendChild(a);

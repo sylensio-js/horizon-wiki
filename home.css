@@ -11,7 +11,6 @@
   padding: 40px 0;
 
   /* Use local background path when deploying; replace as needed */
-  background-image: url('images/background.jpeg'); /* replace with images/background.jpeg in prod */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
