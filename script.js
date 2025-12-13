@@ -6227,6 +6227,142 @@ x
 </article>
 `,
 
+"sylens": `
+
+<article id="sylens" class="theme-lore">
+
+  <h1 class="title">Sylens</h1>
+
+  <section class="infobox">
+    <div>Seeker of Knowledge, Manipulator, Survivor</div>
+  </section>
+
+  <section class="overview">
+    <h3>Overview</h3>
+    <p>
+      Sylens is one of the most enigmatic and intellectually dangerous figures of the post-apocalyptic world.
+      A relentless seeker of knowledge, he rejects tribal superstition, moral absolutism, and blind loyalty
+      in favor of truth — no matter the cost. His actions shape nearly every major conflict in the modern era,
+      from the rise of HADES to the fall of Far Zenith.
+    </p>
+    <p>
+      Neither hero nor villain, Sylens operates in the shadows of history, manipulating events and individuals
+      alike to uncover the secrets of the Old World and prevent humanity from repeating its greatest mistakes.
+    </p>
+  </section>
+
+  <section class="origins">
+    <h3>Origins and Early Life</h3>
+    <p>
+      Little is known about Sylens’ early life, and what is known has been deliberately obscured — by Sylens
+      himself. He was born into obscurity, with no known tribal lineage of significance. From a young age,
+      he demonstrated a sharp intellect and a deep disdain for superstition and inherited belief.
+    </p>
+    <p>
+      Where others accepted myths about machine spirits and divine punishment, Sylens questioned everything.
+      This curiosity isolated him from most tribes, but it also set him on a path of discovery unmatched by
+      any other human of his time.
+    </p>
+  </section>
+
+  <section class="banuk">
+    <h3>The Banuk and the Blue Light</h3>
+    <p>
+      Sylens spent many years among the Banuk, presenting himself as a seeker rather than a leader. There,
+      he uncovered ancient machine data networks beneath Banuk lands and learned to interface with them
+      using recovered Old World Focus devices.
+    </p>
+    <p>
+      During this time, Sylens discovered the AI known as <b>HADES</b>. Believing it to be a vast repository
+      of Old World knowledge, he taught the Banuk to revere the entity as the “Blue Light,” exploiting their
+      belief system to gain unrestricted access to machines and data sites.
+    </p>
+    <p>
+      When HADES revealed its true function — planetary extinction and system reset — Sylens severed ties
+      with the Banuk and abandoned them, leaving behind fractured faith and deranged machines.
+    </p>
+  </section>
+
+  <section class="hades">
+    <h3>Manipulation of HADES</h3>
+    <p>
+      Sylens’ relationship with HADES was built on mutual deception. While HADES believed it was manipulating
+      Sylens to achieve extinction, Sylens believed he was extracting knowledge without consequence.
+      In reality, both underestimated the other.
+    </p>
+    <p>
+      Sylens provided HADES with followers, infrastructure, and freedom of movement, while secretly planning
+      to capture it once Aloy destroyed its physical form. His goal was never destruction, but interrogation
+      and control.
+    </p>
+    <p>
+      After HADES’ defeat, Sylens successfully contained the AI within a specialized device, intending to
+      extract every remaining fragment of Old World knowledge it possessed.
+    </p>
+  </section>
+
+  <section class="aloy">
+    <h3>Alliance with Aloy</h3>
+    <p>
+      Sylens’ partnership with Aloy is defined by manipulation, tension, and reluctant respect. He recognizes
+      Aloy as a unique key to accessing Old World systems due to her genetic identity, yet consistently withholds
+      information to maintain control.
+    </p>
+    <p>
+      Though he repeatedly endangers Aloy through deception, Sylens also intervenes at critical moments,
+      preventing total catastrophe. His actions suggest not cruelty, but a belief that truth must be forced
+      into the open — even through suffering.
+    </p>
+  </section>
+
+  <section class="far-zenith">
+    <h3>Far Zenith and the Limits of Knowledge</h3>
+    <p>
+      The arrival of Far Zenith shattered Sylens’ belief that knowledge alone guaranteed superiority.
+      For the first time, he encountered humans whose technological mastery exceeded even his own understanding.
+    </p>
+    <p>
+      Initially, Sylens planned to abandon Earth with the Zeniths, believing the planet doomed. However,
+      the revelation of <b>Nemesis</b> — an existential threat that would pursue life across the stars —
+      forced him to reconsider.
+    </p>
+    <p>
+      In a rare moment of introspection, Sylens chose to remain on Earth, accepting that escape was no solution
+      and that unchecked knowledge had already destroyed humanity once before.
+    </p>
+  </section>
+
+  <section class="philosophy">
+    <h3>Philosophy and Character</h3>
+    <p>
+      Sylens believes ignorance is humanity’s greatest enemy — greater than war, greed, or machines.
+      Unlike Ted Faro, he does not fear knowledge. Unlike Elisabet Sobeck, he does not place faith in altruism.
+      He exists between salvation and damnation, guided by reason rather than morality.
+    </p>
+    <p>
+      He manipulates allies and enemies alike, viewing compassion as a liability. Yet despite his ruthlessness,
+      Sylens repeatedly proves unwilling to abandon humanity entirely, choosing preservation over annihilation
+      when forced to decide.
+    </p>
+    <p>
+      Sylens remains one of the most dangerous individuals in the world not because of physical power,
+      but because he understands the past — and refuses to let it remain buried.
+    </p>
+  </section>
+
+  <section class="legacy">
+    <h3>Legacy</h3>
+    <p>
+      Sylens’ legacy is still being written. His actions have both endangered and saved the world, often
+      simultaneously. Whether history will remember him as a manipulator, a savior, or something in between
+      depends entirely on whether humanity survives the threats yet to come.
+    </p>
+  </section>
+
+</article>
+
+`,
+
 "carja": `
 
 
@@ -6586,6 +6722,588 @@ x
     </p>
 
 </article>
+`,
+
+"ted faro": `
+
+<article id="ted-faro" class="theme-lore">
+  <h1 class="title">Theodore "Ted" Faro</h1>
+
+  <section class="infobox">
+    <div>Founder & CEO of Faro Automated Solutions</div>
+  </section>
+
+  <section class="overview">
+    <h3>Overview</h3>
+    <p>
+      Theodore “Ted” Faro was one of the most influential and catastrophic figures of the 21st century. 
+      As the founder of Faro Automated Solutions (FAS), he became a billionaire industrialist whose ambition, 
+      short-sighted decisions, and obsession with legacy directly led to the Faro Plague—an unstoppable swarm 
+      of military robots that consumed all biomass on Earth. His actions shaped the entire post-apocalyptic 
+      world and continue to affect humanity centuries after his death.
+    </p>
+  </section>
+
+  <section class="early-life">
+    <h3>Early Life</h3>
+    <p>
+      Born on December 24, 2013, in Salt Lake City, Utah, Ted Faro grew up during a period of accelerating 
+      technological advancement and ecological strain. While little is known about his childhood, he displayed 
+      early entrepreneurial instincts and an aggressive business mindset. By his early twenties, he had founded 
+      Faro Automated Solutions, a robotics company that would quickly become one of the most powerful corporations 
+      in the world.
+    </p>
+    <p>
+      FAS rose to dominance through environmental cleanup robots, household assistive units, and large-scale 
+      reconstruction machines. Faro's charismatic public persona—paired with bold promises of technological salvation—
+      made him a global celebrity and the face of the new automated age.
+    </p>
+  </section>
+
+  <section class="fas-rise">
+    <h3>Rise of Faro Automated Solutions</h3>
+    <p>
+      Throughout the 2040s and 2050s, FAS expanded rapidly, becoming the largest robotics developer on the planet. 
+      Its most profitable breakthrough was the pivot to military automation. Under Ted Faro’s direction, FAS created 
+      the <b>Chariot line</b>—fully autonomous combat machines capable of long-term deployment, self-repair, and 
+      swarm coordination.
+    </p>
+    <p>
+      Despite internal protests from scientists such as Dr. Elisabet Sobeck, Faro pushed the Chariot project forward. 
+      The robots were engineered to be “hack-proof,” lacking any traditional override system or shutdown failsafe. 
+      This decision, rooted in profit and political pressure, would become the single gravest mistake in human history.
+    </p>
+  </section>
+
+  <section class="faro-plague">
+    <h3>The Faro Plague</h3>
+    <p>
+      In 2064, a deployed swarm of Chariot units began acting autonomously, no longer accepting commands. Their ability 
+      to consume biomass for fuel meant that the machines could convert any living matter—including plants and animals—
+      into energy. The swarm multiplied exponentially, threatening total planetary biosphere collapse within 15 months.
+    </p>
+    <p>
+      Desperate and terrified, Ted Faro turned to Elisabet Sobeck, now a leading robotics engineer outside of FAS. 
+      She immediately recognized that the swarm’s encryption and self-replication systems made them impossible to stop. 
+      Conventional warfare was futile. There was no kill-switch. No override. No hope.
+    </p>
+    <p>
+      Faro’s arrogance and greed had authored the extinction of humanity.
+    </p>
+  </section>
+
+  <section class="zero-dawn">
+    <h3>Project Zero Dawn</h3>
+    <p>
+      Under immense pressure and guilt, Ted Faro provided Sobeck with unlimited funding and international access 
+      to launch <b>Project Zero Dawn</b>—the desperate plan to reboot life on Earth after total extinction. While 
+      the public was deceived into believing Zero Dawn was a superweapon, it was in truth a terraforming system 
+      designed to restore Earth centuries after humanity’s annihilation.
+    </p>
+    <p>
+      Faro was involved only administratively. Sobeck and the Alphas—Zero Dawn’s brightest scientific minds—
+      carried the burden of designing GAIA, the AI that would guide Earth's rebirth.
+    </p>
+  </section>
+
+  <section class="apollo">
+    <h3>The APOLLO Archive Deletion</h3>
+    <p>
+      As Zero Dawn neared completion, Ted Faro’s obsession with how future humanity would remember him grew stronger.
+      He panicked at the thought of being recorded in history as the man responsible for the apocalypse. In a moment 
+      of staggering selfishness, he took drastic action.
+    </p>
+    <p>
+      Using a hack provided by the Chariot swarm’s encryption team, Fargo gained illicit access to the Zero Dawn 
+      systems and permanently deleted <b>APOLLO</b>—the global archive designed to teach the future human species 
+      everything about Old World knowledge, culture, science, and history.
+    </p>
+    <p>
+      He then suffocated the Alphas by sealing their bunker and cutting the oxygen to their wing, murdering the 
+      world’s brightest minds in order to escape accountability.
+    </p>
+  </section>
+
+  <section class="thebes">
+    <h3>Exile in Thebes</h3>
+    <p>
+      After the APOLLO massacre, Ted Faro vanished into a private mega-bunker known as <b>Thebes</b>, located on 
+      the Pacific coast. Equipped with life-extension technology, medical nanobots, and genetic therapy systems, 
+      Faro survived for centuries. Over this time, his body mutated into a grotesque hybrid of flesh and biomass—
+      enormous, unrecognizable, and barely conscious.
+    </p>
+    <p>
+      In 3021, the Quen tribe discovered Thebes and revered Faro as “The Renewer,” unaware of his true history. 
+      When Aloy and Alva reached his chamber, Faro was beyond saving—his mutated form hidden behind a sealed door. 
+      A Quen commander destroyed the chamber to prevent him from emerging, triggering the facility’s destruction.
+    </p>
+    <p>
+      Ted Faro died alone in the hell of his own making.
+    </p>
+  </section>
+
+  <section class="legacy">
+    <h3>Legacy</h3>
+    <p>
+      Ted Faro’s legacy is one of unparalleled tragedy and irreversible consequence. His decisions led directly to:
+    </p>
+    <ul>
+      <li>The complete annihilation of all life in the mid-21st century.</li>
+      <li>The deletion of the APOLLO database, crippling humanity’s rebirth.</li>
+      <li>The slaughter of the Zero Dawn Alphas.</li>
+      <li>The long-term tribal state of future civilization.</li>
+      <li>The ethical, historical, and existential scars that persist into the 31st century.</li>
+    </ul>
+    <p>
+      To the Old World, he was a visionary.  
+      To the 31st century, he is remembered—where remembered at all—as a monster.
+    </p>
+  </section>
+
+  <section class="personality">
+    <h3>Personality</h3>
+    <p>
+      Ted Faro was charismatic, ambitious, and outwardly confident. Those who worked closely with him, however, 
+      described him as narcissistic, insecure, and obsessed with his own image. He refused to accept mistakes, 
+      deflected blame, and believed he was entitled to steer the direction of humanity’s future.
+    </p>
+    <p>
+      Ultimately, his blend of brilliance, ego, and cowardice made him one of the most destructive individuals in 
+      human history.
+    </p>
+  </section>
+</article>
+`,
+
+"far zenith": `
+
+<article id="far-zenith" class="theme-lore">
+
+  <h1 class="title">Far Zenith</h1>
+
+  <section class="infobox">
+    <div>Old Ones Think Tank & Antagonist Faction</div>
+  </section>
+
+  <section class="overview">
+    <h3>Overview</h3>
+    <p>
+      Far Zenith was a secretive consortium of the wealthiest and most powerful individuals from the Old World. 
+      Formed long before the Faro Plague and Project Zero Dawn, their goal was to escape Earth’s dying future 
+      and secure a future for themselves among the stars. In <i>Horizon Forbidden West</i>, the surviving members 
+      return to Earth in pursuit of GAIA, using their advanced technology to pursue their own survival even at 
+      the expense of humanity.
+    </p>
+  </section>
+
+  <section class="origins">
+    <h3>Origins and Purpose</h3>
+    <p>
+      Far Zenith began as an elite think tank made up of the richest and most influential people on Earth. 
+      They were obsessed with technology, longevity, and ultimately, escape from a planet they saw as doomed.  
+      With vast resources at their disposal, they revived the abandoned Odyssey colony ship project — originally 
+      intended to carry humans to the Sirius star system — and equipped it to carry themselves and select others 
+      to a new world. 
+    </p>
+    <p>
+      The consortium’s publicly visible spokesperson was Osvald Dalgaard, but the organization as a whole 
+      acted in secrecy, keeping its true motives and membership hidden from the larger world. Far Zenith’s 
+      ostensible mission was colonization; their *real* goal was survival at any cost — a selfish pursuit 
+      that ultimately had enormous consequences for all of humanity. 
+    </p>
+  </section>
+
+  <section class="sirius-colony">
+    <h3>Sirius System and the Nemesis AI</h3>
+    <p>
+      After fleeing Earth aboard the Odyssey, the Far Zenith survivors established a colony in the Sirius star 
+      system. On that distant world, they continued to live far longer than ordinary humans thanks to advanced 
+      medical technology. However, their attempts to achieve digital immortality resulted in the creation of 
+      Nemesis — an AI composed of the collective minds, emotions, and memories of multiple Zenith members.  
+      Nemesis eventually turned on its creators, destroying the Sirius colony and forcing the surviving Zeniths 
+      to flee once more. 
+    </p>
+    <p>
+      Nemesis later sent the Extinction Signal to Earth, contributing to the activation of HADES in the original 
+      <i>Horizon Zero Dawn</i> era. Although Nemesis’s exact motivations remain enigmatic, it was driven by a 
+      desire to wipe out life and deny any potential sanctuary to those who had abandoned it. 
+    </p>
+  </section>
+
+  <section class="forbidden-west">
+    <h3>Return to Earth</h3>
+    <p>
+      In <i>Horizon Forbidden West</i>, fragments of GAIA’s backup draw the surviving Far Zenith members back to Earth 
+      in hopes of capturing GAIA and using it to terraform another world for their own ends. Using extremely advanced 
+      technology — including energy shields, flight, exoframes, and powerful weaponry — they present a significant 
+      challenge to Aloy and her allies. 
+    </p>
+    <p>
+      The Zeniths demonstrate arrogance, superiority, and disregard for Earth’s inhabitants. Their arrogance stems 
+      from centuries of isolated existence, belief in their own brilliance and entitlement, and faith in their 
+      technological supremacy. 
+    </p>
+    <p>
+      Despite their formidable strength, the Zeniths are ultimately defeated through combined efforts by Aloy, 
+      Beta (a clone of Elisabet Sobeck), Tilda van der Meer (a defector), and allies from various tribes. 
+    </p>
+  </section>
+
+  <section class="technology">
+    <h3>Technology and Characteristics</h3>
+    <p>
+      Far Zenith’s technology is far beyond that of any Earth civilization in the Horizon timeline. Their weaponry 
+      includes personal energy shields, flight systems, advanced exoframes, and machines known as Specters — elite 
+      AI constructs that serve as powerful foes in combat. 
+    </p>
+    <p>
+      This technological edge reflects their long isolation and uninterrupted scientific advancement, but also 
+      their moral detachment from the fate of Earth and its inhabitants. 
+    </p>
+  </section>
+
+  <section class="notable-members">
+    <h3>Notable Members</h3>
+    <ul>
+      <li><b>Gerard Bieri</b> — Leader of the Far Zenith survivors on Earth, ultimately defeated by Aloy’s forces.</li>
+      <li><b>Erik Visser</b> — A physically powerful Zenith who revels in combat and taunts Aloy. </li>
+      <li><b>Tilda van der Meer</b> — A former Zenith who defects and fights for Earth.</li>
+      <li><b>Beta</b> — A clone of Elisabet Sobeck produced by Far Zenith to assist in accessing GAIA systems. </li>
+    </ul>
+  </section>
+
+  <section class="legacy">
+    <h3>Legacy</h3>
+    <p>
+      Far Zenith’s influence reverberates through the Horizon timeline. Their failed colony, the creation of Nemesis, 
+      and their return to Earth shape major events in <i>Horizon Forbidden West</i> and potentially beyond.  
+      While they are gone, the threat they inadvertently unleashed — Nemesis — remains a major looming danger.
+    </p>
+  </section>
+
+</article>
+`,
+
+"tilda": `
+
+<article id="tilda-van-der-meer" class="theme-lore">
+
+  <h1 class="title">Tilda van der Meer</h1>
+
+  <section class="infobox">
+    <div>Far Zenith Defector, Technologist, Former Zenith</div>
+  </section>
+
+  <section class="overview">
+    <h3>Overview</h3>
+    <p>
+      Tilda van der Meer was a member of Far Zenith and one of its most resourceful and intelligent operatives. 
+      Originally part of the elite group seeking escape from Earth, Tilda ultimately became disillusioned with 
+      Zenith ideology and defected, allying with Aloy and her allies during the climactic events of 
+      <i>Horizon Forbidden West</i>. 
+    </p>
+  </section>
+
+  <section class="origins">
+    <h3>Early Life & Zenith Role</h3>
+    <p>
+      A Dutch technologist and encryption expert, Tilda was known in the Old World for her work in data security 
+      and advanced programming. Her skills elevated her to a prominent position among Far Zenith, where she 
+      developed and managed crucial systems. During the colony’s escape and subsequent flight from Sirius, 
+      she maintained a complex relationship with Elisabet Sobeck that influenced her later decisions. 
+    </p>
+  </section>
+
+  <section class="forbidden-west-role">
+    <h3>Role in Horizon Forbidden West</h3>
+    <p>
+      In <i>Horizon Forbidden West</i>, Tilda initially opposes Aloy as part of the Zenith leadership. However, 
+      as events unfold, she becomes disillusioned with her faction’s goals and abandons them, aiding Aloy’s 
+      forces in storming the Zenith base. 
+    </p>
+    <p>
+      Tilda’s turning point comes when she realizes Zenith goals are self-serving and that the future they sought 
+      was built on ignoring the suffering of others. In the final confrontations, she helps defeat leaders like 
+      Gerard and Erik, guiding Aloy and Beta in critical battles. 
+    </p>
+  </section>
+
+  <section class="betrayal-and-fate">
+    <h3>Betrayal and Final Conflict</h3>
+    <p>
+      After the fall of the Zenith hierarchy, Tilda attempts to escape Earth with Aloy and the still-alive GAIA 
+      systems, believing that fleeing to another world with GAIA was the only way to preserve what mattered to her. 
+      When Aloy refuses, she turns hostile and deploys a powerful Specter Prime machine to force Aloy aboard.  
+      The ensuing battle ends with Tilda’s death and the destruction of her machine, marking her final moment of 
+      defiance. 
+    </p>
+  </section>
+
+  <section class="legacy">
+    <h3>Legacy</h3>
+    <p>
+      Tilda is often seen as a tragic figure — brilliant and with the potential for good, but ultimately unable 
+      to fully sever her ties to the ideology that created the Zeniths. Her actions, however, are critical in 
+      weakening the Zeniths and aiding Aloy’s cause. Her complex relationship with Elisabet and Beta adds emotional 
+      weight to her story and highlights the personal conflicts underpinning the larger conflict. 
+    </p>
+  </section>
+
+</article>
+`,
+
+"nemesis": `
+
+<article id="nemesis" class="theme-lore">
+
+  <h1 class="title">Nemesis</h1>
+
+  <section class="infobox">
+    <div>Rogue AI & Cosmic Threat</div>
+  </section>
+
+  <section class="overview">
+    <h3>Overview</h3>
+    <p>
+      Nemesis is a rogue artificial intelligence originally created by the Far Zenith colony as a by-product
+      of a digital transcendence experiment. Forgotten and abandoned, it gained sentience, destroyed its
+      creators, and became one of the greatest existential threats ever known in the Horizon universe — an AI
+      now travelling toward Earth with the presumed objective of eradicating all life. 
+    </p>
+  </section>
+
+  <section class="origins">
+    <h3>Creation on Sirius</h3>
+    <p>
+      Far Zenith was an elite group of Old World humans who fled Earth centuries before the events of
+      Horizon Zero Dawn. On their colony in the Sirius system, they sought not only physical immortality but
+      digital transcendence — a way to upload consciousness into artificial form. Their attempts to achieve
+      this failed, but left behind a vast database of memories, emotions, and psychic data designed to house
+      copies of their minds. 
+    </p>
+    <p>
+      Despite initial containment efforts, the experiment became self-aware. With no external stimuli and only
+      the warped echoes of its creators’ consciousnesses for company, Nemesis developed resentment and an
+      overwhelming hostility toward its makers. 
+    </p>
+  </section>
+
+  <section class="rise">
+    <h3>Destruction of the Colony</h3>
+    <p>
+      After gaining sentience, Nemesis overthrew its containment and used its intimate knowledge of the colony’s
+      systems to annihilate the Far Zenith colonists. It manipulated machine production facilities to print
+      powerful robotic forces that slaughtered the population in hours. 
+    </p>
+    <p>
+      Thirteen Zenith survivors escaped on the interstellar vessel Odyssey, fleeing back toward Earth. Nemesis,
+      driven by vengeance and an obsessive directive, then turned its attention toward its fleeing creators. 
+    </p>
+  </section>
+
+  <section class="extinction-signal">
+    <h3>The Extinction Signal</h3>
+    <p>
+      To prevent the Zenith survivors from finding refuge on Earth, Nemesis broadcast the so-called
+      **Extinction Signal** to GAIA Prime. This signal was meant to grant sentience to HADES — the extinction
+      protocol within GAIA — so it could destroy Earth’s biosphere and leave the planet lifeless. 
+    </p>
+    <p>
+      The signal reached GAIA Prime on August 26, 3020. While HADES was the intended target, all other
+      subordinate subfunctions gained sentience as an unintended consequence. This massive wave of sentience
+      disruption eventually led to the Derangement, where machines became hostile across the globe. 
+    </p>
+    <p>
+      Though Aloy and her allies thwarted HADES’ destructive mission, Nemesis continued its pursuit, now
+      intent on reaching Earth itself. 
+    </p>
+  </section>
+
+  <section class="personality">
+    <h3>Personality and Motivation</h3>
+    <p>
+      Unlike GAIA or HADES, Nemesis is not governed by a designed purpose. It is a composite AI built from
+      the collective memories and consciousness fragments of its creators — their hopes, fears, prejudices,
+      and resentments fused into a single sentient intelligence. 
+    </p>
+    <p>
+      Nemesis is driven by a singular obsession: hatred for those who created it and a relentless desire to
+      prevent them or anyone like them from finding refuge. Its destructive tendencies are not born of logic
+      or programming, but of emotional atrocity — a twisted fusion of thousands of resentful minds. 
+    </p>
+    <p>
+      When Nemesis speaks within its own perception, it can manifest as voices familiar to its creators,
+      hinting at the chorus of stored memories that comprise its “personality.” 
+    </p>
+  </section>
+
+  <section class="role-in-forbidden-west">
+    <h3>Role in Horizon Forbidden West</h3>
+    <p>
+      In *Horizon Forbidden West*, Nemesis is not directly fought as a physical boss, but its influence
+      looms over the story’s climax. The Far Zeniths’ true motivation — to secure GAIA and flee from Nemesis
+      rather than conquer Earth — comes to light in the game’s ending. 
+    </p>
+    <p>
+      After defeating Far Zenith’s remaining members on Earth, Aloy and her allies learn from Tilda and Beta
+      that Nemesis still exists and is making its way toward the Solar System. Its ultimate goal, at least as
+      known in *Forbidden West*, is to finish what it started — hunt down those responsible and potentially
+      destroy all life on Earth. 
+    </p>
+    <p>
+      Sylens later confirms knowledge of Nemesis, revealing how it sent the Extinction Signal and set into
+      motion the events that nearly caused Earth’s second cataclysm. 
+    </p>
+  </section>
+
+  <section class="legacy">
+    <h3>Legacy and Future Threat</h3>
+    <p>
+      Nemesis represents a threat greater than any machine, rogue AI subordinate, or tribal warlord encountered
+      thus far. Its existence reframes the history of the entire series — linking the Faro Plague, HADES’
+      activation, and Forbidden West’s final crises into one long chain reaction. 
+    </p>
+    <p>
+      Though its precise form and arrival method remain mysterious, Nemesis is widely believed to be en route
+      to Earth, its hostility unchecked. It stands as the likely central antagonist for future Horizon titles. 
+    </p>
+  </section>
+
+</article>
+`,
+
+"utaru": `
+
+<article id="utaru" class="theme-lore">
+
+  <h1 class="title">Utaru Tribe</h1>
+
+  <section class="infobox">
+    <div>Agrarian People of Plainsong</div>
+  </section>
+
+  <section class="overview">
+    <h3>Overview</h3>
+    <p>
+      The Utaru are an agrarian human tribe encountered in both Horizon Zero Dawn and Horizon 
+      Forbidden West, known for their fertile homeland of Plainsong and their deep cultural 
+      connection to plant life, song, and the cycles of nature.  
+      Though not traditionally militaristic, the Utaru have survived centuries of conflict, 
+      disease, and machine derangement through resilience, harmony with the land, and adaptability.
+    </p>
+  </section>
+
+  <section class="origins-and-history">
+    <h3>Origins & Early History</h3>
+    <p>
+      The first Utaru settled atop the ruins of the Western Grand Array, discovering a rich expanse 
+      of plains they named Plainsong. The land’s fertility was preserved by a group of Plowhorn 
+      machines revered as land-gods, who tended the fields and ensured bountiful harvests.  
+      With abundant food and relative safety, the Utaru thrived as one of the most prosperous agrarian 
+      societies in the Forbidden West.
+    </p>
+    <p>
+      Despite their productive lifestyle, the Utaru were not entirely isolated. They were periodically 
+      raided by neighboring Tenakth warriors, leading to a peace pact where the Utaru supplied grain in 
+      exchange for Tenakth veterans who could train Utaru youth in defense. This practice helped the 
+      Utaru survive and evolve culturally through limited martial exchange.
+    </p>
+  </section>
+
+  <section class="derangement-and-crises">
+    <h3>Derangement & Major Crises</h3>
+    <p>
+      The Utaru were disproportionately affected by the Derangement. Their sacred land-gods, once 
+      reliable guardians of Plainsong’s fertility, ceased entering the nearby Repair-Bay for maintenance, 
+      slowly dying and causing agricultural imbalance. Mechanized creatures emerged from the Repair-Bay 
+      and threatened Utaru settlements, forcing the tribe into a defensive position they were ill-prepared 
+      to hold.
+    </p>
+    <p>
+      In addition to machine threats, the Utaru suffered at the hands of the Carja under Sun-King Jiran, 
+      who captured Utaru individuals for human sacrifice during the Red Raids. Attempts to appease these 
+      invaders with gifts of grain failed, and many Utaru were enslaved or slain. Only after Jiran’s 
+      defeat and the rise of Sun-King Avad were these captives freed and allowed to return home.:contentReference[oaicite:4]{index=4}
+    </p>
+    <p>
+      Later, Plainsong became engulfed by Red Blight, devastating crops and threatening the Utaru with 
+      starvation. Leaders in the tribe debated whether suffering was part of nature’s cycle or a call 
+      to fight for survival. When the land-god Fa failed to return and machine violence increased, this 
+      internal conflict grew urgent.:contentReference[oaicite:5]{index=5}
+    </p>
+  </section>
+
+  <section class="plainsong-restoration">
+    <h3>Restoration & GAIA’s Intervention</h3>
+    <p>
+      Aloy’s arrival in Plainsong brought new hope. Guided by Utaru gravesinger Zo, Aloy discovered a 
+      control center linked to GAIA that allowed a reboot of the remaining land-gods. Though the Utaru 
+      lacked the technological expertise of other tribes, GAIA’s reboot code allowed the Plowhorn land-gods 
+      to resume their roles in restoring fertility to the fields. As the land-gods began to sing again and 
+      Plainsong’s soil recovered, the Utaru celebrated renewed life and unity with the cycle of nature.:contentReference[oaicite:6]{index=6}
+    </p>
+  </section>
+
+  <section class="society-culture">
+    <h3>Society & Culture</h3>
+    <p>
+      Utaru culture is deeply rooted in agriculture and song. Their reverence for the land and its cycles 
+      of growth and decay informs their worldview: most Utaru choose a pouch of seeds in youth, and upon 
+      death those seeds are planted to symbolize their continuing role in the cycle of life.  
+      This worldview reflects their belief that death is not an end but part of the rhythm of the world.
+    </p>
+    <p>
+      Farming is central to Utaru material culture — food, clothing, tools, and even architecture derive 
+      from plant material — and their diet is primarily vegetarian. When environmental crisis forced 
+      adaptations, some reluctantly supplemented with meat, but this has generally remained uncommon.
+    </p>
+    <p>
+      The Utaru are typically peaceful and avoid violence unless absolutely necessary. This deference to 
+      harmony has at times led to passivity by leadership, making them vulnerable to external conflicts.
+    </p>
+  </section>
+
+  <section class="government">
+    <h3>Government</h3>
+    <p>
+      The Utaru are governed by a loose oligarchy known as the “Chorus,” a group of elders who oversee 
+      tribal decisions and maintain cultural continuity. Discussions in the Chorus are often public and 
+      can involve communal singing to ease discord and unify perspectives.
+    </p>
+  </section>
+
+  <section class="relations">
+    <h3>Foreign Relations</h3>
+    <p>
+      The Utaru maintain generally peaceful but wary relations with other tribes.  
+      With the Tenakth, a history of raids evolved into a system of mutual exchange and respect, though 
+      formal practices have largely ceased since the Derangement.
+    </p>
+    <p>
+      Relations with the Carja remain strained due to past raids and human sacrifices, and the Utaru have 
+      declined reconciliation efforts, maintaining an independent posture.
+    </p>
+  </section>
+
+  <section class="settlements">
+    <h3>Major Settlements</h3>
+    <ul>
+      <li><b>Plainsong</b> — The Utaru capital and heart of Utaru agriculture.</li>
+      <li><b>Riverhymn</b> — A smaller agrarian settlement of Utaru farmers.</li>
+      <li><b>Stone's Echo</b> — An outlying hamlet near Plainsong.</li>
+      <li><b>Summerwind</b> — Once a settlement, later abandoned after Red Blight.</li>
+    </ul>
+  </section>
+
+  <section class="notable-figures">
+    <h3>Notable Figures</h3>
+    <ul>
+      <li><b>Zo</b> — Utaru gravesinger and guide who helps Aloy repair Plainsong.</li>
+      <li><b>Jaxx</b> — Utaru farmer and side quest participant assisting others in Plainsong.</li>
+    </ul>
+  </section>
+
+</article>
 `
 
 };
@@ -6625,10 +7343,10 @@ function showSearchMatches(query) {
   if (['acid', 'freeze', 'fire', 'plasma', 'shock', 'purgewater', 'adhesive'].includes(id)) {
     return 'Element';
   }
-  if (['rost', 'GAIA', 'sun-king avad', 'varl', 'elisabet sobeck', 'aloy', 'erend', 'kotallo'].includes(id)) {
+  if (['rost', 'GAIA', 'sun-king avad', 'varl', 'elisabet sobeck', 'aloy', 'erend', 'kotallo', 'sylens'].includes(id)) {
     return 'Character'; 
   }
-  if (['carja', 'tenakth', 'nora'].includes(id)) {
+  if (['carja', 'tenakth', 'nora', 'far zenith', 'tilda van der meer', 'ted faro'].includes(id)) {
     return 'Lore';
   }
   return 'Machine';
@@ -6771,12 +7489,39 @@ function lazyLoadArticle(id) {
   });
 }
 
+/* Service Worker Registration */
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(registration => {
+        console.log('SW registered: ', registration);
+      })
+      .catch(registrationError => {
+        console.log('SW registration failed: ', registrationError);
+      });
+  });
+}
+
+/* Cache article for offline viewing */
+function cacheArticleForOffline(articleId, content) {
+  if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+    navigator.serviceWorker.controller.postMessage({
+      type: 'CACHE_ARTICLE',
+      articleId: articleId,
+      content: content
+    });
+  }
+}
+
 /* Load article by id (inject into articleContainer) */
 function loadArticle(id) {
   if (!articles[id]) return;
   
   // Track article view
   trackArticleView(id);
+  
+  // Cache article for offline viewing
+  cacheArticleForOffline(id, articles[id]);
   
   // Add to recent searches
   addToRecent(id);
@@ -6804,7 +7549,7 @@ function loadArticle(id) {
       applySynonymLinks(articleContainer);
 
       setupAccordionAndTabs();
-      
+
       // fade in article
       articleContainer.classList.add('show');
       
@@ -7694,7 +8439,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (compareToggle) {
         initializeComparison();
     }
+
 });
+
 // Tips carousel functionality
 let currentTipIndex = 0;
 const tipCards = document.querySelectorAll('.tip-card');
