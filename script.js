@@ -8565,7 +8565,7 @@ function showSearchMatches(query) {
     if (q === 'elements' || q === 'element') return type === 'element';
     if (q === 'characters' || q === 'character') return type === 'character';
     if (q === 'lore') return type === 'lore';
-    if (q === 'subfunctions' || q === 'subfunction') return type === 'subfunction';
+    if (q === 'subfunction') return type === 'subfunction';
     return false;
   }
   
