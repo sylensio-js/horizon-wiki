@@ -124,6 +124,21 @@
   color: #2d4a37 !important;
 }
 
+/* Light theme for floating action buttons */
+.light-theme .back-to-top,
+.light-theme .back-to-home {
+  background: rgba(255, 255, 255, 0.92) !important;
+  border-color: rgba(184, 134, 11, 0.15) !important;
+  color: #b8860b !important;
+}
+
+.light-theme .back-to-top:hover,
+.light-theme .back-to-home:hover {
+  background: rgba(255, 255, 255, 1) !important;
+  border-color: rgba(184, 134, 11, 0.32) !important;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06) !important;
+}
+
 /* Articles */
 .light-theme article {
   background: rgba(255, 255, 255, 0.95) !important;

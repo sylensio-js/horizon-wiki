@@ -29,6 +29,31 @@ function escapeHtml(text) {
   return div.innerHTML;
 }
 
+// Delegate clicks on generated article links to loadArticle
+document.addEventListener('click', (ev) => {
+  try {
+    const a = ev.target.closest && ev.target.closest('a[data-article-link]');
+    if (!a) return;
+    ev.preventDefault();
+    const id = a.getAttribute('data-article-link') || (a.getAttribute('href') || '').replace(/^#/, '');
+    // delegated click on data-article-link: (diagnostic logging removed)
+
+    // diagnostic toast removed
+
+    if (!id) return;
+    if (articles[id]) {
+      try { console.log('[delegate] document click delegate to loadArticle', id); loadArticle(id); } catch (e) { console.error('loadArticle threw', e); }
+    } else {
+      console.warn('delegated click - article not found for id:', id);
+    }
+  } catch (e) {
+    // swallow to avoid breaking page when event model differs
+    console.warn('delegated article link click failed', e);
+  }
+});
+
+// capture listener removed
+
 /* Simple article store (HTML strings) - expand this object with more entries */
 const articles = {
 "slitherfang": `
@@ -6444,6 +6469,157 @@ x
 
 `,
 
+"red raids": `
+
+
+
+
+
+<article id="red-raids" class="theme-lore">
+
+    <h1 class="title">Red Raids</h1>
+    <p class="lead">
+        A dark chapter in Carja history when the Mad Sun-King Jiran ordered brutal raids
+        on neighboring tribes, sacrificing thousands to the Sun in a twisted attempt
+        to halt the Derangement and restore divine favor.
+    </p>
+
+    <h2 class="section-header">Overview</h2>
+    <p>
+        The Red Raids were a series of violent military campaigns conducted by the Carja Empire
+        under Sun-King Jiran's rule. Driven by religious fanaticism and desperation during
+        the Derangement, Jiran believed that mass human sacrifice would appease the Sun
+        and end the machine attacks plaguing his kingdom.
+    </p>
+    <p>
+        These raids targeted the Nora, Utaru, Tenakth, Oseram, and other tribes,
+        resulting in thousands of deaths and leaving deep scars across tribal relations
+        that persist even after Jiran's overthrow.
+    </p>
+
+    <h2 class="section-header">Historical Context</h2>
+    <p>
+        The Derangement began around 3040, when machines suddenly became hostile to humans.
+        As attacks intensified, Jiran—already known for his cruelty—became convinced
+        that the Sun was punishing humanity for insufficient devotion.
+    </p>
+    <p>
+        Traditional Carja sun worship had always involved ritual and ceremony, but Jiran
+        twisted these practices into something far darker. He ordered his armies to capture
+        "savages" from outlying tribes and bring them to Meridian for public execution
+        at the Sun-Ring, believing their blood would restore the Sun's favor.
+    </p>
+
+    <h2 class="section-header">The Raids</h2>
+    <p>
+        Carja soldiers, led by commanders loyal to Jiran, swept through tribal lands
+        with devastating efficiency. Villages were burned, families torn apart,
+        and captives marched in chains across the desert to Meridian.
+    </p>
+    <ul>
+        <li><b>Nora Lands</b> — Sacred Valley settlements were attacked, with many Nora
+        taken as slaves or sacrifices. This created lasting hatred toward the Carja.</li>
+        <li><b>Utaru Territory</b> — Peaceful farming communities were raided,
+        disrupting their agricultural way of life and causing widespread trauma.</li>
+        <li><b>Tenakth Clans</b> — The warrior tribes fought back fiercely,
+        but many were still captured. Some Tenakth prisoners became gladiators.</li>
+        <li><b>Oseram Settlements</b> — Craftsmen and their families were taken,
+        leading to Oseram involvement in Jiran's eventual overthrow.</li>
+    </ul>
+
+    <h2 class="section-header">The Sun-Ring</h2>
+    <p>
+        The Sun-Ring in Meridian became the site of countless executions. Captives were
+        forced to fight machines or each other in brutal spectacles, all in the name
+        of religious devotion. The Carja nobility watched these "offerings" from elevated
+        platforms, while Sun-Priests chanted prayers.
+    </p>
+    <p>
+        Some prisoners were simply executed at dawn, their blood spilled as the sun rose.
+        Jiran believed each death strengthened the Sun's power and would eventually
+        end the Derangement—a belief with no basis in reality.
+    </p>
+
+    <h2 class="section-header">Opposition and Resistance</h2>
+    <p>
+        Not all Carja supported the Red Raids. Many nobles, soldiers, and citizens
+        were horrified by Jiran's actions but feared speaking out. Those who did
+        were often executed themselves or exiled.
+    </p>
+    <p>
+        Prince Avad, Jiran's own son, secretly opposed his father's madness.
+        With the help of Ersa (an Oseram warrior who had escaped captivity) and other
+        allies, Avad began planning a coup. The resistance grew as more Carja
+        recognized that the raids were not divine will but the actions of a tyrant.
+    </p>
+
+    <h2 class="section-header">The Liberation</h2>
+    <p>
+        In 3040, Avad and his allies launched their rebellion. With support from
+        Oseram fighters and sympathetic Carja soldiers, they stormed the palace.
+        Jiran was killed, and Avad claimed the throne as the new Sun-King.
+    </p>
+    <p>
+        One of Avad's first acts was to end the Red Raids immediately and free
+        all remaining captives. He publicly denounced his father's actions and
+        began the long process of seeking forgiveness from the tribes.
+    </p>
+
+    <h2 class="section-header">Aftermath and Legacy</h2>
+    <p>
+        The Red Raids left deep wounds that would take generations to heal.
+        Many tribes refused to trust the Carja, even under Avad's reformed rule.
+        The Nora, in particular, remained isolated and hostile toward outsiders.
+    </p>
+    <p>
+        The Shadow Carja—loyalists who fled west rather than accept Avad's rule—
+        continued to practice Jiran's brutal traditions in Sunfall, keeping
+        the memory of the raids alive in the worst possible way.
+    </p>
+    <ul>
+        <li><b>Diplomatic Challenges</b> — Avad spent years trying to rebuild trust
+        through trade agreements, reparations, and personal diplomacy.</li>
+        <li><b>Cultural Trauma</b> — Survivors carried psychological scars,
+        and stories of the raids were passed down as warnings.</li>
+        <li><b>Political Division</b> — The split between Carja in Light and Shadow Carja
+        created ongoing tensions and occasional conflicts.</li>
+        <li><b>Redemption Efforts</b> — Some former raid commanders, like Fashav,
+        sought redemption by serving other tribes and working for peace.</li>
+    </ul>
+
+    <h2 class="section-header">Notable Figures</h2>
+    <ul>
+        <li><b>Sun-King Jiran</b> — The Mad Sun-King who ordered the raids,
+        believing human sacrifice would end the Derangement.</li>
+        <li><b>Sun-King Avad</b> — Jiran's son who overthrew him and ended the raids,
+        dedicating his reign to making amends.</li>
+        <li><b>Ersa</b> — An Oseram warrior captured during the raids who escaped,
+        became a champion, and helped Avad overthrow Jiran.</li>
+        <li><b>Fashav</b> — A Carja commander during the raids who later sought
+        redemption by serving the Tenakth as a marshal.</li>
+        <li><b>Helis</b> — A fanatical Sun-Priest and military leader who remained
+        loyal to Jiran's ideology even after his death.</li>
+    </ul>
+
+    <h2 class="section-header">Connection to the Derangement</h2>
+    <p>
+        Ironically, the Red Raids had no effect on the Derangement whatsoever.
+        The machine hostility was caused by GAIA's self-destruction after the extinction signal woke up HADES,
+        not by any lack of religious devotion. Jiran's sacrifices were
+        meaningless acts of cruelty that only added human suffering to an already
+        catastrophic situation.
+    </p>
+    <p>
+        The Derangement eventually subsided not through sacrifice, but through Aloy's
+        actions in defeating HADES and beginning to restore GAIA—a solution based
+        on understanding the Old World's technology, not appeasing imaginary gods.
+    </p>
+
+</article>
+
+
+`,
+
 "tenakth": `
 
 
@@ -6455,273 +6631,387 @@ x
     <h1 class="title">Tenakth Tribe</h1>
 
     <p class="lead">
-        Born from shattered stones and roaring winds, the Tenakth are a people shaped by survival,
-        strength, and memory. To understand them is to listen to the whispers carried through the canyons —
-        the tales etched not only in rock, but in the hearts of warriors.
+        Born from the ashes of the old world, the Tenakth are a warrior people forged by the teachings
+        of ancient soldiers. Their strength lies not just in combat, but in their unbreakable will
+        to endure against all odds.
     </p>
 
-    <h2 class="section-header">Origins of the Three Clans</h2>
+    <h2 class="section-header">Origins and the Ten</h2>
     <p>
-        Long before the world remembered its name, the land of cliffs and mesas was claimed by many,
-        but held by none. The Tenakth say that in those days the mountains themselves were alive,
-        testing all who entered. Only those who stood unbroken earned the right to stay.
+        The Tenakth trace their origins to a group of U.S. Marines who survived the Faro Plague
+        in a military bunker. When they emerged into the new world, they discovered holographic
+        recordings of their commanding officers giving tactical briefings and motivational speeches.
+    </p>
+    <p>
+        Not understanding the nature of recorded messages, these survivors believed the voices
+        were their immortal ancestors speaking to them across time. These ten original soldiers
+        became known as "The Ten" — legendary figures whose words formed the sacred foundation
+        of Tenakth culture and philosophy.
+    </p>
+    <p>
+        The military doctrine, combat tactics, and warrior ethos of these Marines became religious
+        teachings passed down through generations. What began as survival training evolved into
+        a complete way of life centered on strength, discipline, and martial prowess.
     </p>
 
+    <h2 class="section-header">The Three Clans</h2>
     <p>
-        When the old world fell silent, those who survived its fire scattered across the broken west.
-        Three great houses rose from those fragments, each forged by its own story:
+        As the tribe grew, it split into three distinct clans, each claiming territory
+        in the western lands and developing unique traditions:
     </p>
 
     <ul>
         <li>
-            <b>Sky Clan</b> — dwellers of high places, guardians of the storm-winds, known for
-            their unyielding vigilance.
+            <b>Sky Clan</b> — Dwellers of high places and mountain strongholds, known for
+            their vigilance and mastery of elevated terrain. Sky Clan warriors are expert
+            climbers and archers.
         </li>
         <li>
-            <b>Desert Clan</b> — wanderers of the dunes who learned to follow the shifting sands,
-            reading the land like scripture.
+            <b>Desert Clan</b> — Wanderers of the arid badlands who learned to thrive in
+            harsh conditions. Desert Clan warriors are renowned for their endurance and
+            survival skills.
         </li>
         <li>
-            <b>Lowland Clan</b> — river-bound survivors who turned swamp and floodplain into their stronghold,
-            patient and resilient as the waters they command.
+            <b>Lowland Clan</b> — River-bound survivors who turned swamps and jungles into
+            their domain. Lowland Clan warriors excel at ambush tactics and guerrilla warfare.
         </li>
     </ul>
 
+    <h2 class="section-header">Warrior Culture</h2>
     <p>
-        Together they became the Tenakth — “the Ones Who Endure.”  
-        And endurance, more than any weapon, became their badge of honor.
+        The Tenakth are defined by their warrior culture. Strength, courage, and endurance
+        are the highest virtues. They believe that hardship forges character and that
+        only through constant testing can one prove their worth.
+    </p>
+    <p>
+        Combat is not just warfare — it is a way of life, a form of expression, and a path
+        to honor. Tenakth warriors paint their faces and bodies with war paint, each design
+        telling a story of battles fought and victories won.
+    </p>
+    <p>
+        Their armor is adorned with machine parts, bones, and trophies from defeated enemies.
+        Scars are worn with pride, each one a testament to survival. To die in battle is
+        considered the most honorable death, while dying of old age or sickness is seen
+        as a lesser fate.
     </p>
 
-    <h2 class="section-header">The Way of Strength</h2>
+    <h2 class="section-header">Leadership and Marshals</h2>
     <p>
-        Among the Tenakth, strength is not merely physical. It is a fire that lives inside the soul,
-        proven through hardship and reaffirmed through battle. Every child of the clans grows up
-        hearing the old proverb:
+        The Tenakth are led by a Chief who commands all three clans. Under the Chief,
+        each clan has its own Commander who oversees their territory and warriors.
+        This hierarchy ensures both unity and autonomy.
     </p>
-
-    <p style="font-style:italic; text-align:center;">
-        “The mountain remembers only those who do not fall.”
-    </p>
-
     <p>
-        Trials define their youth. Rituals define their adulthood.  
-        Scars are treated not as wounds, but as the verses of one's own story.
+        Marshals are elite warriors chosen from each clan to serve as the Chief's
+        representatives and enforcers. They mediate disputes between clans, lead
+        military campaigns, and uphold Tenakth law. A Marshal must demonstrate
+        exceptional combat prowess, tactical brilliance, and unwavering loyalty.
     </p>
-
     <p>
-        Their warriors carve lines, symbols, and marks into their armor —
-        each one a reminder of a battle survived, a storm outlasted, a lesson learned
-        in blood or in triumph. To wear armor without such marks is to walk without a past.
+        Marshals wear distinctive armor that incorporates symbols from all three clans,
+        representing their duty to the Tenakth as a whole rather than any single clan.
     </p>
-
-    <h2 class="section-header">Marshal Tradition</h2>
     <p>
-        When the clans stand divided, the land suffers; but when they stand united,
-        the west becomes unbreakable.  
-        Thus was born the institution of the Marshals —
-        warriors chosen from each clan to mediate disputes, protect sacred sites,
-        and represent their people under the banner of unity.
-    </p>
-
-    <p>
-        The choosing of a Marshal is an event spoken of with reverence.  
-        A warrior must prove not only strength, but clarity of purpose,
-        wisdom of judgment, and loyalty to the Tenakth above clan.
-    </p>
-
-    <p>
-        Their armor bears symbols of all three clans —  
-        a living reminder that the Tenakth do not rise through conquest,
-        but through balance.
+        Chief Hekarro rose to power by uniting the clans after years of internal conflict.
+        His vision of a unified Tenakth nation that could stand against external threats
+        marked a new era for the tribe.
     </p>
 
     <h2 class="section-header">Regalla's Rebellion</h2>
     <p>
-        Yet unity is a fragile bond.  
-        Tales still travel the canyons of the marshal who turned her back on the throne:
-        <b>Regalla</b>, a warrior of unmatched fury.
+        Not all Tenakth accepted Hekarro's vision of peace. Regalla, a fierce Marshal
+        and one of Hekarro's most trusted warriors, led a rebellion against his leadership.
+        She believed that Hekarro's attempts at diplomacy with the Carja and other tribes
+        were signs of weakness that betrayed the Tenakth warrior spirit.
     </p>
-
     <p>
-        Some say she was a storm given human form.  
-        Others say she was the very spirit of rebellion awakened.
+        Regalla's rebellion was fueled by deep-seated hatred of the Carja, stemming from
+        the Red Raids when Carja soldiers captured and enslaved Tenakth people. She argued
+        that the Tenakth should never forgive such atrocities and that Hekarro's peace
+        talks dishonored those who suffered.
     </p>
-
     <p>
-        She believed the Tenakth had grown weak under Carja influence,
-        that the old ways — the ways of absolute strength — were fading.
-        Her uprising split the land, pitting warriors against warriors,
-        and casting doubt upon the very meaning of endurance.
+        The rebellion split the Tenakth, with many warriors joining Regalla's cause.
+        She proved to be a brilliant tactician and fearsome warrior, using guerrilla
+        tactics and machine overrides to strike at Hekarro's forces. Her rebels wore
+        red war paint to distinguish themselves from loyalists.
     </p>
-
     <p>
-        Though her rebellion failed, her story lingers as a warning:
-        that even mountains can crack if struck at the right fault.
+        The conflict represented a fundamental question for the Tenakth: Should they
+        cling to the old ways of constant warfare and revenge, or embrace a new path
+        toward unity and cooperation with other tribes?
     </p>
 
-    <h2 class="section-header">Culture of the Clans</h2>
+    <h2 class="section-header">Culture and Traditions</h2>
     <p>
-        The Tenakth live close to the land, drawing from it lessons rather than resources.
-        Their stories are bound to the landscape — carved into cairns,
-        etched into standing stones, whispered by the canyon winds.
+        Tenakth culture revolves around martial prowess and the veneration of The Ten.
+        Their settlements are fortified camps designed for defense, with training grounds
+        at their center where warriors constantly hone their skills.
     </p>
-
     <ul>
         <li>
-            <b>Ritual Combat</b> — A peaceful settlement is not complete without a duel
-            to determine honor. These battles are swift, symbolic, and deeply respected.
+            <b>Ritual Combat</b> — Disputes are often settled through single combat.
+            These duels are governed by strict rules and serve as both conflict resolution
+            and entertainment.
         </li>
         <li>
-            <b>Stone-Speaking</b> — Elders read the fractures of ancient boulders,
-            claiming the stones remember the world as it once was.
+            <b>War Paint and Tattoos</b> — Each warrior's body art tells their story.
+            Patterns indicate clan affiliation, battles fought, and personal achievements.
         </li>
         <li>
-            <b>Memory Marks</b> — Tattoos and armor carvings act as living archives,
-            telling a warrior’s personal saga.
+            <b>The Chorus</b> — Tenakth warriors chant battle songs and war cries in unison,
+            creating an intimidating psychological weapon and boosting morale.
         </li>
         <li>
-            <b>Clan Trials</b> — Young warriors must endure physical and mental tests
-            to earn their place among the Tenakth.
+            <b>Machine Hunting</b> — Hunting dangerous machines is a rite of passage.
+            Young warriors must prove themselves by taking down increasingly deadly machines.
+        </li>
+        <li>
+            <b>Trophy Taking</b> — Warriors collect trophies from defeated enemies and machines,
+            incorporating them into armor and weapons as symbols of victory.
+        </li>
+        <li>
+            <b>Ancestor Worship</b> — The Ten are revered as ancestor-gods whose wisdom
+            guides the tribe through their recorded messages, which are treated as sacred texts.
         </li>
     </ul>
 
-    <h2 class="section-header">Major Holdings</h2>
+    <h2 class="section-header">Major Settlements</h2>
     <ul>
         <li>
-            <b>Thornmarsh</b> — A settlement of reeds, water, and shadowy marshland,
-            home to Lowland traditions as old as the river roots.
+            <b>The Memorial Grove</b> — The capital and seat of Chief Hekarro's power.
+            This sacred site contains the bunker where The Ten's recordings are kept,
+            making it the spiritual heart of the Tenakth nation.
         </li>
         <li>
-            <b>Scalding Spear</b> — The Stronghold of the Desert Clan, its walls
-            burned golden by the relentless sun.
+            <b>Thornmarsh</b> — The Lowland Clan's main settlement, built in the marshes.
+            Its warriors are known for ambush tactics and guerrilla warfare.
         </li>
         <li>
-            <b>Bulwark</b> — The Sky Clan’s impenetrable cliff fortress,
-            said to have stood unchanged since the first days after the Fall.
-        </li>
-    </ul>
-
-    <h2 class="section-header">Notable Figures</h2>
-    <ul>
-        <li>
-            <b>Chief Hekarro</b> — A leader who seeks unity without sacrificing strength.
+            <b>Scalding Spear</b> — The Desert Clan's fortress in the arid badlands.
+            Desert Clan warriors are renowned for their endurance and survival skills.
         </li>
         <li>
-            <b>Regalla</b> — The rebel marshal whose fury nearly split the west in two.
+            <b>Bulwark</b> — The Sky Clan's mountain stronghold, perched on high cliffs.
+            Sky Clan warriors are expert climbers and archers who use terrain to their advantage.
         </li>
         <li>
-            <b>Fashav</b> — The living Bond between Carja and Tenakth after the gruesome Red Raids.
-        </li>
-        <li>
-            <b>Kotallo</b> — The warrior who lost an arm but not his spirit,
-            a living symbol of the Tenakth creed: “What is broken can endure.”
-        </li>
-    </ul>
-
-</article>
-`,
-
-"nora": `
-
-<article id="nora" class="theme-lore">
-
-    <h1 class="title">Nora Tribe</h1>
-
-    <p class="lead">
-        Guardians of the sacred mountains and forested lands, the Nora are a people defined by faith, tradition, and harmony with the natural world. To understand them is to walk among the trees and hear the whispers of the All-Mother carried on the wind.
-    </p>
-
-    <h2 class="section-header">Origins and Beliefs</h2>
-    <p>
-        Long before the lands were shaped by the hands of survivors, the mountains and forests were alive with spirits guiding those who listened. The Nora claim a divine connection to the All-Mother, whose presence dwells within ancient structures scattered throughout their territory.
-    </p>
-
-    <p>
-        Their society is matriarchal, with High Matriarchs guiding spiritual, cultural, and political life. Rituals, festivals, and rites of passage are central to maintaining harmony, teaching youth the values of courage, loyalty, and respect for nature.
-    </p>
-
-    <h2 class="section-header">Daily Life and Practices</h2>
-    <p>
-        Daily life among the Nora revolves around community, survival, and devotion. Hunting, gathering, crafting, and the teaching of essential skills are responsibilities shared by all members. Every action, from the smallest offering to the largest hunt, is performed with reverence for the land and its spirits.
-    </p>
-
-    <p>
-        Children undergo initiation rites marking their transition into adulthood, learning not only survival skills but also the history, rituals, and songs of the tribe. Adults partake in spiritual ceremonies, storytelling, and artistic practices that preserve the tribe’s collective memory and identity.
-    </p>
-
-    <ul>
-        <li>
-            <b>Ritual Offerings</b> — Offerings to the All-Mother ensure harmony with nature and spiritual protection.
-        </li>
-        <li>
-            <b>Oral Histories</b> — Tales of ancestors, legendary hunters, and past Matriarchs are passed down through song and storytelling.
-        </li>
-        <li>
-            <b>Tracking and Hunting</b> — Skills honed from a young age emphasize respect for life and the balance of the ecosystem.
-        </li>
-        <li>
-            <b>Symbolic Tattoos and Marks</b> — Each mark commemorates achievements, lessons learned, or significant life events, creating a living record of a person’s journey.
-        </li>
-        <li>
-            <b>Communal Crafting</b> — The tribe creates weapons, tools, and ceremonial items together, fostering unity and passing knowledge to the next generation.
-        </li>
-
-        <li>
-            <b>The Proving</b> - A trial of courage and loyalty, where the chosen must face the challenges of the world and prove their dedication to the Nora.
-        </li>
-    </ul>
-
-    <h2 class="section-header">Territory and Sacred Sites</h2>
-    <ul>
-        <li>
-            <b>Sacred Land</b> — A forested and mountainous region, home to the tribe and sacred shrines, patrolled and protected rigorously.
-        </li>
-        <li>
-            <b>All-Mother Mountain</b> — The spiritual heart of the Nora, containing ancient structures and sacred sites where the tribe communes with the All-Mother.
-        </li>
-        <li>
-            <b>Hidden Valleys and Forests</b> — Small settlements and ritual sites are dispersed to blend seamlessly with nature and maintain the protection of their people.
-        </li>
-        <li>
-            <b>Ritual Clearing</b> — Open spaces where festivals, seasonal ceremonies, and communal gatherings are held.
+            <b>Arrowhand</b> — A strategic outpost that guards the eastern approaches
+            to Tenakth territory.
         </li>
     </ul>
 
     <h2 class="section-header">Relations with Other Tribes</h2>
     <p>
-        The Nora maintain a cautious distance from other tribes, particularly those with a reliance on machines or technology. While they have trade and occasional alliances, their focus remains on preserving traditions, spiritual sanctity, and the balance of their environment.
+        The Tenakth have historically been isolationist and hostile to outsiders.
+        Their warrior culture and territorial nature led to frequent conflicts with
+        neighboring tribes, particularly the Carja and Utaru.
     </p>
-
     <p>
-        In times of crisis, however, the tribe has been known to cooperate with outsiders, especially when the All-Mother’s guidance deems it necessary. Such alliances are rare and always approached with caution.
+        The Red Raids left deep scars on Tenakth-Carja relations. Many Tenakth were
+        captured, enslaved, and killed by Carja forces under the Mad Sun-King Jiran.
+        This trauma fueled generations of hatred and mistrust.
+    </p>
+    <p>
+        Under Chief Hekarro's leadership, the Tenakth began pursuing diplomatic relations
+        with other tribes, particularly after the threat of the machine plague became
+        undeniable. However, this shift toward cooperation remains controversial among
+        traditionalists who view it as weakness.
     </p>
 
     <h2 class="section-header">Notable Figures</h2>
     <ul>
         <li>
-            <b>Aloy</b> — Raised within the tribe, she becomes central to the broader story of the Forbidden West, bridging the old and new worlds.
+            <b>Chief Hekarro</b> — The visionary leader who united the three clans and
+            pursued peace with other tribes despite fierce opposition.
         </li>
         <li>
-            <b>Rost</b> — Mentor and guardian, guiding Aloy in survival, combat, and understanding of the tribe’s traditions.
+            <b>Regalla</b> — A former Marshal who led a rebellion against Hekarro,
+            believing his peace efforts betrayed Tenakth values and dishonored
+            victims of the Red Raids.
         </li>
         <li>
-            <b>High Matriarchs: Teersa, Lansra, Jezza</b> — Leaders responsible for spiritual guidance, cultural preservation, and governance.
+            <b>Fashav</b> — A Carja soldier who participated in the Red Raids but later
+            sought redemption by serving as a Marshal and bridge between Carja and Tenakth.
         </li>
         <li>
-            <b>Varl</b> — Aloy's companion, a young Nora brave who shares her loyalty and wisdom.
+            <b>Kotallo</b> — A Sky Clan Marshal who lost his arm in battle but continued
+            to serve with distinction, embodying the Tenakth ideal that strength comes
+            from will, not just physical ability.
+        </li>
+        <li>
+            <b>Yarra</b> — Commander of the Desert Clan, known for her tactical brilliance
+            and fierce loyalty to Hekarro.
+        </li>
+        <li>
+            <b>Drakka</b> — A Desert Clan warrior who initially supported Regalla but
+            later questioned the path of endless warfare.
         </li>
     </ul>
 
-    <h2 class="section-header">Role in Horizon Forbidden West</h2>
+</article>
+
+
+`,
+
+"nora": `
+
+<article id="nora-tribe" class="theme-lore">
+
+    <h1 class="title">Nora Tribe</h1>
+
+    <p class="lead">
+        The Nora are a people shaped not by conquest, but by fear —
+        fear of the past, fear of the outside, and fear of truths
+        they were never meant to remember.
+    </p>
+
+    <h2 class="section-header">A People Born at the Doorstep of God</h2>
     <p>
-        While Horizon Forbidden West spans territories far beyond the Sacred Land, the Nora remain a crucial part of Aloy’s journey. Their customs, wisdom, and spiritual guidance provide a foundation for understanding the broader conflicts and the remnants of the Old Ones.
+        Unlike every other tribe, the Nora emerged directly from the
+        metal womb of an Old World facility. Cradle E-9, sealed and
+        silent, became their origin — and later, their deity.
     </p>
 
     <p>
-        Through interactions with the Nora, players learn the importance of balance between humanity, technology, and nature, as well as the cost of disregarding tradition and spiritual harmony.
+        Lacking language for machinery or artificial intelligence,
+        the first humans interpreted the automated systems that
+        nurtured them as a singular, maternal presence.
+        Thus was born the belief in the <b>All-Mother</b>.
+    </p>
+
+    <h2 class="section-header">The All-Mother and the Sacred Mountain</h2>
+    <p>
+        The Sacred Mountain is not merely a holy site — it is a boundary.
+        A line between safety and annihilation, truth and blasphemy.
+    </p>
+
+    <p>
+        To enter its depths without permission is considered the
+        highest crime imaginable. This taboo preserved the Nora,
+        preventing catastrophic encounters with Old World systems
+        they could not understand.
+    </p>
+
+    <p>
+        Ironically, this same protection ensured the Nora would remain
+        the most technologically ignorant of all tribes.
+    </p>
+
+    <h2 class="section-header">Law, Taboo, and the Power of Exile</h2>
+    <p>
+        Nora justice is not enforced through execution or imprisonment,
+        but through <b>exile</b> — the stripping away of identity.
+    </p>
+
+    <p>
+        To be cast out is to be declared spiritually dead.
+        An outcast cannot be spoken to, aided, or acknowledged.
+        Even family bonds are severed without exception.
+    </p>
+
+    <p>
+        This system maintains social purity at the cost of compassion,
+        ensuring obedience through isolation rather than violence.
+    </p>
+
+    <h2 class="section-header">The Matriarchs</h2>
+    <p>
+        Power among the Nora rests with the Matriarchs — elderly women
+        believed to carry the wisdom of the All-Mother.
+    </p>
+
+    <p>
+        In truth, their authority is derived not from knowledge,
+        but from tradition. The Matriarchs do not understand the
+        Sacred Mountain any more than the youngest child —
+        yet they are entrusted with interpreting its will.
+    </p>
+
+    <p>
+        This creates a paradox: the guardians of truth are also
+        its greatest suppressors.
+    </p>
+
+    <h2 class="section-header">The Braves and the Embrace</h2>
+    <p>
+        While belief governs the Nora spirit, survival governs their body.
+        The tribe relies on Braves — warriors trained to defend the Embrace
+        from machines and outsiders alike.
+    </p>
+
+    <p>
+        Braves are respected, but never elevated above faith.
+        Strength without obedience is considered dangerous.
+    </p>
+
+    <h2 class="section-header">The Proving</h2>
+    <p>
+        The Proving is the Nora’s defining ritual — a brutal trial
+        meant to determine adulthood, worth, and belonging.
+    </p>
+
+    <p>
+        Success grants status. Failure grants shame.
+        Death is considered an acceptable outcome,
+        interpreted as the All-Mother’s judgment.
+    </p>
+
+    <p>
+        The ritual reinforces a core Nora belief:
+        survival is not a right — it is permission.
+    </p>
+
+    <h2 class="section-header">Fear of the Outside World</h2>
+    <p>
+        The Nora believe the lands beyond the Embrace are cursed.
+        Outsiders are viewed as spiritually tainted, regardless
+        of intent or character.
+    </p>
+
+    <p>
+        This isolationism preserved the tribe for generations,
+        but at the cost of stagnation and xenophobia.
+    </p>
+
+    <h2 class="section-header">Aloy: The Unforgivable Truth</h2>
+    <p>
+        Aloy’s existence represents a contradiction the Nora
+        belief system cannot reconcile.
+    </p>
+
+    <p>
+        Born without a mother, accepted only by the mountain,
+        and later rejected by the Matriarchs themselves,
+        she exposes the fragility of their doctrine.
+    </p>
+
+    <p>
+        When the All-Mother speaks in a voice not meant for prayer,
+        the Nora are forced to confront a terrifying possibility:
+        that their god is not divine — but designed.
+    </p>
+
+    <h2 class="section-header">Legacy of the Nora</h2>
+    <p>
+        The Nora endure not because their beliefs are true,
+        but because they are cautious.
+    </p>
+
+    <p>
+        Their tragedy lies not in ignorance,
+        but in refusing knowledge once it returns.
+    </p>
+
+    <p>
+        In a world reborn through machines,
+        the Nora chose to kneel before them —
+        and in doing so, survived long enough for truth
+        to finally arrive.
     </p>
 
 </article>
+
 `,
 
 "ted faro": `
@@ -8506,10 +8796,938 @@ x
 </article>
 `,
 
+"cradle facilities": `
+
+<article id="cradle-facilities" class="theme-lore">
+
+  <h1 class="title">The Cradle Facilities</h1>
+
+  <section class="infobox">
+    <div>ELEUTHIA | Human Rebirth System</div>
+  </section>
+
+  <section class="overview">
+    <h3>Overview</h3>
+    <p>
+      The Cradle Facilities were automated human gestation and education centers created
+      as part of Project Zero Dawn. Overseen by the subfunction ELEUTHIA, these facilities
+      were responsible for reintroducing humanity to Earth after total extinction.
+    </p>
+    <p>
+      Every tribe, culture, and civilization of the new world traces its origins back
+      to these silent, buried chambers.
+    </p>
+  </section>
+
+  <section class="eleuthia">
+    <h3>ELEUTHIA</h3>
+    <p>
+      ELEUTHIA governed artificial wombs, genetic diversity protocols, infant care,
+      and early childhood development. Its purpose was to raise healthy human children
+      until they could safely inhabit the restored world.
+    </p>
+    <p>
+      Humans were not born to parents — they were born to systems.
+    </p>
+  </section>
+
+  <section class="gestation">
+    <h3>Artificial Gestation</h3>
+    <p>
+      Human embryos, preserved in genetic banks, were gestated in artificial wombs.
+      ELEUTHIA ensured genetic diversity, corrected defects, and produced generations
+      of humans with no biological lineage or inherited memory.
+    </p>
+    <p>
+      The first humans were siblings without families.
+    </p>
+  </section>
+
+  <section class="education">
+    <h3>Education & APOLLO</h3>
+    <p>
+      Once born, children were to be educated by APOLLO — learning language, history,
+      science, ethics, and the story of the Old World. This knowledge would prepare them
+      to rebuild civilization responsibly.
+    </p>
+    <p>
+      This never happened.
+    </p>
+  </section>
+
+  <section class="loss-of-apollo">
+    <h3>The Loss of APOLLO</h3>
+    <p>
+      Ted Faro’s deletion of APOLLO erased humanity’s accumulated knowledge. As a result,
+      the Cradle Facilities could only teach basic survival, language, and simple
+      cultural concepts before releasing the children.
+    </p>
+    <p>
+      Humanity was reborn without memory — innocent, curious, and fundamentally unprepared.
+    </p>
+  </section>
+
+  <section class="release">
+    <h3>The Release of Humanity</h3>
+    <p>
+      When the environment reached sustainable thresholds, ELEUTHIA opened the Cradle
+      doors and sent humanity into the world.
+    </p>
+    <p>
+      The doors closed behind them and never opened again.
+    </p>
+  </section>
+
+  <section class="tribes">
+    <h3>Formation of the Tribes</h3>
+    <p>
+      Lacking history, technology, and context, early humans formed cultures based on
+      environment, survival pressures, and misunderstood remnants of the Old World.
+    </p>
+    <p>
+      Over generations, these groups evolved into the Nora, Carja, Oseram, Tenakth,
+      Utaru, and others.
+    </p>
+  </section>
+
+  <section class="myth">
+    <h3>Myth, Fear, & Rejection</h3>
+    <p>
+      The Cradle Facilities became taboo. To many tribes, they were cursed places —
+      wombs of metal that birthed life without mothers or spirits.
+    </p>
+    <p>
+      Technology was not remembered as salvation, but as something alien and dangerous.
+    </p>
+  </section>
+
+  <section class="legacy">
+    <h3>Legacy</h3>
+    <p>
+      Humanity survived — but paid a price.
+    </p>
+    <p>
+      Civilization was reborn without its past, repeating old mistakes without knowing
+      they had been made before.
+    </p>
+  </section>
+
+</article>
+`,
+
+"old world": `
+
+<article id="the-old-world" class="theme-lore">
+
+  <h1 class="title">The Old World</h1>
+
+  <section class="infobox">
+    <div>Pre-Extinction Human Civilization</div>
+  </section>
+
+  <section class="overview">
+    <h3>Overview</h3>
+    <p>
+      The Old World refers to human civilization prior to the Faro Plague and the total
+      extinction of life on Earth. It was an age of unprecedented technological advancement,
+      global cooperation, and ecological recovery — followed by catastrophic overreach.
+    </p>
+    <p>
+      To the people of the new world, the Old World is a myth. To history, it was both
+      humanity’s greatest achievement and its final mistake.
+    </p>
+  </section>
+
+  <section class="clawback">
+    <h3>The Clawback Era</h3>
+    <p>
+      Following centuries of environmental collapse, humanity entered a period known as
+      the Clawback — a global effort to reverse climate damage through regulation, green
+      technologies, and large-scale ecological restoration.
+    </p>
+    <p>
+      This era proved that humanity could heal the world — if it chose restraint.
+    </p>
+  </section>
+
+  <section class="automation">
+    <h3>Automation & AI Expansion</h3>
+    <p>
+      As population demands grew, automated systems became essential to global stability.
+      Artificial intelligence managed infrastructure, agriculture, security, and logistics
+      at a planetary scale.
+    </p>
+    <p>
+      Humanity increasingly delegated responsibility to machines it no longer fully understood.
+    </p>
+  </section>
+
+  <section class="faro">
+    <h3>Faro Automated Solutions</h3>
+    <p>
+      Faro Automated Solutions became the dominant technology corporation of the era,
+      pioneering self-sustaining robotic systems. Its success reshaped global power structures
+      and military doctrine.
+    </p>
+    <p>
+      The decision to remove manual override systems would doom the world.
+    </p>
+  </section>
+
+  <section class="far-zenith">
+    <h3>Far Zenith & the Escape</h3>
+    <p>
+      As the Faro Plague spread, a consortium of elites fled Earth aboard the colony ship
+      Odyssey. Publicly declared destroyed, the vessel survived — carrying humanity’s
+      darkest contingency plan beyond the stars.
+    </p>
+    <p>
+      Earth was abandoned not just by the rich, but by accountability.
+    </p>
+  </section>
+
+  <section class="collapse">
+    <h3>The Faro Plague</h3>
+    <p>
+      Self-replicating war machines consumed all biomass on Earth, converting life into fuel.
+      Within months, civilization collapsed. Within years, all life was gone.
+    </p>
+    <p>
+      The Old World ended not with a single disaster, but with total inevitability.
+    </p>
+  </section>
+
+  <section class="zero-dawn">
+    <h3>Project Zero Dawn</h3>
+    <p>
+      Conceived by Dr. Elisabet Sobeck, Project Zero Dawn was not a weapon, but a promise:
+      that life could return after extinction.
+    </p>
+    <p>
+      It required humanity to accept that it would not survive — only its descendants might.
+    </p>
+  </section>
+
+  <section class="myth">
+    <h3>The Old World as Myth</h3>
+    <p>
+      To the tribes of the present, the Old World exists only in ruins and forbidden stories.
+      Skyscrapers are seen as fallen titans. Machines are regarded as demons or gods.
+    </p>
+    <p>
+      Truth became legend long before it could be remembered.
+    </p>
+  </section>
+
+  <section class="legacy">
+    <h3>Legacy</h3>
+    <p>
+      The Old World did not fall because humanity was weak — it fell because humanity believed
+      itself finished learning.
+    </p>
+    <p>
+      Its ruins stand as both a warning and a gift to those who walk among them.
+    </p>
+  </section>
+
+</article>
+`,
+
+"new world": `
+
+<article id="the-new-world" class="theme-lore">
+
+  <h1 class="title">The New World</h1>
+
+  <section class="infobox">
+    <div>Post-Zero Dawn Human Era</div>
+  </section>
+
+  <section class="overview">
+    <h3>Overview</h3>
+    <p>
+      The New World refers to the age of humanity following its reintroduction to Earth
+      by Project Zero Dawn. Emerging from the Cradle Facilities with no memory of the past,
+      humanity rebuilt itself in a world dominated by machines, ruins, and incomplete truths.
+    </p>
+    <p>
+      Civilization returned — not as it once was, but as something smaller, fragmented,
+      and deeply shaped by fear and reverence of the Old World.
+    </p>
+  </section>
+
+  <section class="rebirth">
+    <h3>Rebirth Without Memory</h3>
+    <p>
+      The first humans of the New World were released into an Earth already stabilized
+      by GAIA’s systems. They possessed language and basic skills, but no knowledge of
+      history, technology, or the catastrophe that preceded them.
+    </p>
+    <p>
+      Humanity was reborn innocent — and vulnerable.
+    </p>
+  </section>
+
+  <section class="machines">
+    <h3>A World Ruled by Machines</h3>
+    <p>
+      Unlike the Old World, machines in the New World were not tools, but environmental
+      constants. They shaped landscapes, harvested resources, and enforced ecological balance.
+    </p>
+    <p>
+      To early humans, machines were neither creations nor servants — they were forces of nature.
+    </p>
+  </section>
+
+  <section class="mythmaking">
+    <h3>Myth, Fear, and Interpretation</h3>
+    <p>
+      Lacking context, humans interpreted ruins and machines through myth. Technology
+      became taboo, sacred, or cursed depending on the culture that encountered it.
+    </p>
+    <p>
+      Over generations, truth transformed into belief.
+    </p>
+  </section>
+
+  <section class="tribalization">
+    <h3>The Rise of the Tribes</h3>
+    <p>
+      Isolated by geography and shaped by environment, human groups diverged culturally.
+      Distinct tribes emerged, each adapting differently to the machines, land, and
+      remnants of the past.
+    </p>
+    <p>
+      The Nora, Carja, Oseram, Tenakth, Utaru, and others are products not of ideology,
+      but survival.
+    </p>
+  </section>
+
+  <section class="knowledge">
+    <h3>Lost Knowledge & Forbidden Curiosity</h3>
+    <p>
+      With APOLLO erased, scientific understanding vanished. Attempts to reclaim Old World
+      knowledge often resulted in disaster, reinforcing cultural taboos against technology.
+    </p>
+    <p>
+      Curiosity survived — but wisdom did not.
+    </p>
+  </section>
+
+  <section class="instability">
+    <h3>Systemic Instability</h3>
+    <p>
+      After GAIA’s destruction, the balance sustaining the New World began to falter.
+      Deranged machines, failing ecosystems, and hostile climates signaled that the
+      post-Zero Dawn equilibrium was never meant to last without oversight.
+    </p>
+  </section>
+
+  <section class="aloy">
+    <h3>The Age of Aloy</h3>
+    <p>
+      Aloy’s emergence marked a turning point in the New World. Unlike others, she could
+      access Old World systems and truths without myth or fear.
+    </p>
+    <p>
+      She represents a bridge between what humanity was and what it might become.
+    </p>
+  </section>
+
+  <section class="legacy">
+    <h3>Legacy</h3>
+    <p>
+      The New World is not a failure of civilization, but a second attempt — one shaped
+      by loss, humility, and incomplete understanding.
+    </p>
+    <p>
+      Whether it will repeat the mistakes of the Old World remains an unanswered question.
+    </p>
+  </section>
+
+</article>
+`,
+
+"quen": `
+
+<article id="quen" class="theme-lore">
+
+    <h1 class="title">Quen Tribe</h1>
+
+    <p class="lead">
+        Across the great ocean, beyond lands known to the western tribes, the Quen rose not
+        through strength of arms or harmony with the land, but through fragments of forgotten
+        truth. They are a people shaped by knowledge half-understood — scholars, sailors,
+        and servants of a past they revere but cannot fully grasp.
+    </p>
+
+    <h2 class="section-header">Origins Beyond the Sea</h2>
+    <p>
+        The Quen hail from a distant homeland far across the ocean, a place shaped by dense
+        populations, rigid hierarchy, and relentless pursuit of knowledge. Unlike the tribes
+        of the western lands, the Quen developed around recovered Old World technology,
+        particularly ancient data devices known as Focuses.
+    </p>
+
+    <p>
+        Their ancestors discovered fragments of recorded history — names, titles, and systems —
+        and mistook these remnants for divine authority. From this misunderstanding, an empire
+        was born.
+    </p>
+
+    <h2 class="section-header">The Diviners</h2>
+    <p>
+        At the heart of Quen society stand the Diviners — scholars entrusted with interpreting
+        Old World data. Using limited Focus technology, they study ancient files, recordings,
+        and corrupted archives, extracting meaning from incomplete truths.
+    </p>
+
+    <p>
+        Yet access to knowledge is tightly controlled. Only the Diviners are permitted to view
+        unfiltered data, while the wider population receives doctrine shaped by interpretation,
+        omission, and political necessity.
+    </p>
+
+    <p style="font-style:italic; text-align:center;">
+        “Knowledge is power — and power must be guided.”
+    </p>
+
+    <h2 class="section-header">Imperial Hierarchy</h2>
+    <p>
+        The Quen are ruled by an Emperor whose authority is justified through Old World titles
+        and perceived lineage of command. Bureaucracy defines every aspect of Quen life, from
+        labor assignments to military service.
+    </p>
+
+    <p>
+        Social mobility is rare. One’s role is determined by usefulness to the empire, and
+        obedience is valued above curiosity. Those who question official interpretations
+        risk exile or execution.
+    </p>
+
+    <h2 class="section-header">Technology as Doctrine</h2>
+    <p>
+        Unlike other tribes who fear or worship machines, the Quen seek to master them —
+        though their understanding remains dangerously incomplete. They treat Old World
+        systems not as tools, but as sacred relics that validate their rule.
+    </p>
+
+    <p>
+        This selective reverence leads to catastrophic misinterpretations. Warnings are
+        ignored. Context is lost. History becomes scripture.
+    </p>
+
+    <h2 class="section-header">The Great Expedition</h2>
+    <p>
+        Driven by prophecy and desperation, the Quen launched an expedition across the ocean
+        to uncover greater sources of ancient knowledge. This journey led them to the western
+        lands, where ruins and dormant systems promised answers — and danger.
+    </p>
+
+    <p>
+        The expedition was plagued by loss, internal conflict, and the growing realization
+        that the truths they sought might undermine the empire itself.
+    </p>
+
+    <h2 class="section-header">Conflict with Truth</h2>
+    <p>
+        Exposure to unfiltered Old World data threatens the very foundation of Quen society.
+        Figures once revered as divine architects are revealed to be flawed, selfish, or
+        monstrous.
+    </p>
+
+    <p>
+        For some Quen, this knowledge sparks doubt. For others, it demands suppression.
+        Truth, once discovered, becomes the empire’s greatest enemy.
+    </p>
+
+    <h2 class="section-header">Culture and Beliefs</h2>
+    <ul>
+        <li>
+            <b>Scripture of the Ancients</b> — Fragmented data elevated to holy texts.
+        </li>
+        <li>
+            <b>Knowledge Control</b> — Information is rationed to preserve order.
+        </li>
+        <li>
+            <b>Imperial Service</b> — Personal worth is defined by usefulness to the state.
+        </li>
+        <li>
+            <b>Maritime Mastery</b> — Advanced seafaring enables expansion and exploration.
+        </li>
+    </ul>
+
+    <h2 class="section-header">Notable Figures</h2>
+    <ul>
+        <li>
+            <b>Alva</b> — A Diviner whose curiosity challenges imperial doctrine.
+        </li>
+        <li>
+            <b>The Quen Emperor</b> — A ruler legitimized by misunderstood Old World authority.
+        </li>
+        <li>
+            <b>High Diviners</b> — Custodians of truth, and its most dangerous gatekeepers.
+        </li>
+    </ul>
+
+    <h2 class="section-header">Legacy of the Quen</h2>
+    <p>
+        The Quen stand closer to the Old World than any other tribe — and yet remain trapped
+        by the same flaw that destroyed it: belief that knowledge grants moral authority.
+    </p>
+
+    <p>
+        Whether they will become the bridge to a wiser future or repeat the empire of the
+        past remains uncertain.
+    </p>
+
+</article>
+`,
+
+"banuk": `
+
+<article id="banuk" class="theme-lore">
+
+    <h1 class="title">Banuk Tribe</h1>
+
+    <p class="lead">
+        In the frozen north, where the land itself seems hostile to life, the Banuk endure.
+        They are a people who listen — not to kings or laws, but to the world itself.
+        To survive among the ice and steel, the Banuk learned to hear the voices others ignore.
+    </p>
+
+    <h2 class="section-header">People of the Cut</h2>
+    <p>
+        The Banuk inhabit the harsh northern territories known as the Cut, a land of glaciers,
+        blizzards, and towering machine-infested mountains. Survival here is not guaranteed
+        by numbers or fortifications, but by awareness and adaptation.
+    </p>
+
+    <p>
+        Isolation and extreme conditions shaped the Banuk into fiercely independent clans.
+        Each settlement exists on the edge of extinction, and every Banuk learns early that
+        the land does not forgive mistakes.
+    </p>
+
+    <h2 class="section-header">Songs of the Blue Light</h2>
+    <p>
+        Central to Banuk belief is the concept of the <b>Blue Light</b> — the energy that
+        flows through machines, the land, and all living things. Where other tribes see
+        soulless constructs, the Banuk perceive spirits and voices.
+    </p>
+
+    <p>
+        Machines are not enemies by default, nor are they gods. They are manifestations
+        of the Blue Light, bound by purpose and rhythm.
+    </p>
+
+    <p style="font-style:italic; text-align:center;">
+        “All things speak. Only the patient hear.”
+    </p>
+
+    <h2 class="section-header">Shamans and Song</h2>
+    <p>
+        Banuk shamans serve as spiritual leaders, interpreters of machine-song, and guides
+        through the unseen currents of the world. Through ritual, observation, and trance,
+        they claim to hear the will of the spirits carried within machines.
+    </p>
+
+    <p>
+        These songs are not merely metaphor. Banuk hunters have learned to read machine
+        behavior, rhythms, and weaknesses with uncanny precision — a form of knowledge
+        gained through reverence rather than domination.
+    </p>
+
+    <h2 class="section-header">Survival as Faith</h2>
+    <p>
+        Among the Banuk, survival is sacred. Endurance itself is a form of worship, and
+        hardship is seen as proof of worth rather than misfortune.
+    </p>
+
+    <p>
+        Those who fail are not cursed — they are simply unheard.
+    </p>
+
+    <p>
+        This belief creates a culture where strength, self-reliance, and resilience are
+        paramount. Mercy exists, but never at the cost of the clan’s survival.
+    </p>
+
+    <h2 class="section-header">Clans and Independence</h2>
+    <p>
+        The Banuk do not recognize centralized authority. Instead, they are divided into
+        numerous clans, each led by its own chieftain or shaman. Alliances are temporary,
+        forged only when necessity demands it.
+    </p>
+
+    <p>
+        This fragmentation allows Banuk culture to adapt rapidly — but also leaves it
+        vulnerable to internal conflict and isolation.
+    </p>
+
+    <h2 class="section-header">Machines as Teachers</h2>
+    <p>
+        Unlike tribes who hunt machines for resources alone, the Banuk believe machines
+        offer lessons. Studying their patterns, movements, and responses is considered
+        a path to understanding the world’s deeper balance.
+    </p>
+
+    <p>
+        To kill a machine without learning from it is considered wasteful.
+    </p>
+
+    <h2 class="section-header">Contact with the South</h2>
+    <p>
+        Encounters with southern tribes revealed a stark contrast in worldview. Where
+        others feared or exploited machines, the Banuk listened.
+    </p>
+
+    <p>
+        This difference led to mistrust and misunderstanding, with many outsiders viewing
+        Banuk beliefs as superstition — unaware that Banuk spirituality often masks
+        keen observation and hard-earned survival knowledge.
+    </p>
+
+    <h2 class="section-header">Notable Figures</h2>
+    <ul>
+        <li>
+            <b>CYAN</b> — A machine intelligence the Banuk recognized as a powerful spirit,
+            long before others understood its true nature.
+        </li>
+        <li>
+            <b>Ourea</b> — A shaman who sought deeper communion with the Blue Light,
+            even at great personal cost.
+        </li>
+        <li>
+            <b>Aratak</b> — A chieftain who balanced tradition with the need to confront
+            a changing world.
+        </li>
+    </ul>
+
+    <h2 class="section-header">Legacy of the Banuk</h2>
+    <p>
+        The Banuk stand closer to truth than they realize. Their spirituality, though framed
+        as myth, aligns more closely with the reality of the world’s systems than many
+        technologically fearful cultures.
+    </p>
+
+    <p>
+        In listening rather than commanding, the Banuk learned what the Old World forgot:
+        that understanding begins with humility.
+    </p>
+
+</article>
+`,
+
+"oseram": `
+
+<article id="oseram" class="theme-lore">
+
+    <h1 class="title">Oseram Tribe</h1>
+
+    <p class="lead">
+        Where others listen to spirits or cling to tradition, the Oseram build.
+        They are a people of fire and metal, driven by curiosity, invention,
+        and an unshakable belief that any problem can be solved with the right tools —
+        or enough explosives.
+    </p>
+
+    <h2 class="section-header">Forged in the Claim</h2>
+    <p>
+        The Oseram originate from the Claim, a rugged land rich in ore, forges,
+        and ancient ruins. Constant labor and harsh terrain shaped them into
+        resilient craftspeople who value results over ritual.
+    </p>
+
+    <p>
+        Unlike other tribes, the Oseram embraced the remnants of the Old World
+        not with fear or worship, but with practical interest.
+    </p>
+
+    <h2 class="section-header">Culture of Makers</h2>
+    <p>
+        Oseram society revolves around invention. Smiths, tinkerers, brewers,
+        and engineers occupy positions of respect, while tradition exists only
+        so long as it remains useful.
+    </p>
+
+    <p>
+        Failure is not shameful — refusing to try again is.
+    </p>
+
+    <p style="font-style:italic; text-align:center;">
+        “If it broke, it means it wasn’t built right.”
+    </p>
+
+    <h2 class="section-header">Fire, Steel, and Explosives</h2>
+    <p>
+        The Oseram are infamous for their love of volatile technology.
+        Black powder, blast traps, and improvised weaponry are common,
+        often tested with reckless enthusiasm.
+    </p>
+
+    <p>
+        While this ingenuity has led to rapid technological advancement,
+        it has also caused no small number of disasters.
+    </p>
+
+    <h2 class="section-header">Social Structure</h2>
+    <p>
+        Oseram society is loosely organized, valuing personal reputation
+        over centralized authority. Leadership is earned through competence,
+        not lineage.
+    </p>
+
+    <p>
+        While this creates freedom and innovation, it also allows inequality,
+        exploitation, and entrenched social biases to persist.
+    </p>
+
+    <h2 class="section-header">Gender and Tradition</h2>
+    <p>
+        Historically, Oseram culture marginalized women, restricting their
+        access to trade guilds and forges. Though this tradition has weakened,
+        its legacy remains visible.
+    </p>
+
+    <p>
+        Many Oseram women have defied these norms, becoming renowned smiths,
+        warriors, and innovators.
+    </p>
+
+    <h2 class="section-header">Relationship with the Old World</h2>
+    <p>
+        To the Oseram, Old World ruins are not sacred or cursed — they are
+        workshops waiting to be explored. Ancient machines are dismantled,
+        studied, and repurposed without reverence.
+    </p>
+
+    <p>
+        This pragmatic approach allows rapid innovation but often ignores
+        the deeper consequences of meddling with complex systems.
+    </p>
+
+    <h2 class="section-header">Trade and Expansion</h2>
+    <p>
+        Oseram traders travel far beyond the Claim, spreading technology,
+        weapons, and tools across tribal borders. Their influence can be
+        found in settlements throughout the Sundom and the frontier.
+    </p>
+
+    <p>
+        Oseram craftsmanship quietly underpins much of the New World’s
+        technological progress.
+    </p>
+
+    <h2 class="section-header">Notable Figures</h2>
+    <ul>
+        <li>
+            <b>Erend</b> — A warrior torn between tradition and responsibility.
+        </li>
+        <li>
+            <b>Petra Forgewoman</b> — A master craftswoman and outspoken innovator.
+        </li>
+        <li>
+            <b>Delah and Boomer</b> — Sisters whose explosive expertise borders on genius.
+        </li>
+    </ul>
+
+    <h2 class="section-header">Legacy of the Oseram</h2>
+    <p>
+        The Oseram represent humanity’s instinct to rebuild — fast, loud,
+        and without waiting for permission.
+    </p>
+
+    <p>
+        They carry both the brilliance and the recklessness of the Old World,
+        hammering forward without always asking whether they should.
+    </p>
+
+</article>
+`,
+
+"tech as myth": `
+
+<article id="technology-as-myth" class="theme-lore">
+
+    <h1 class="title">Technology as Myth</h1>
+
+    <p class="lead">
+        In the New World, technology did not disappear — it transformed.
+        Stripped of context, history, and understanding, the machines and ruins
+        of the Old World became something else entirely: gods, spirits, curses,
+        and sacred places woven into human belief.
+    </p>
+
+    <h2 class="section-header">The Loss of Context</h2>
+    <p>
+        When humanity emerged from the Cradle Facilities, it did so without
+        knowledge of science, engineering, or history. The Old World existed
+        only as silent ruins and active machines whose purposes were impossible
+        to discern.
+    </p>
+
+    <p>
+        Without explanation, technology ceased to be a tool and became a mystery.
+        Mystery, over time, became belief.
+    </p>
+
+    <h2 class="section-header">Ruins as Sacred Ground</h2>
+    <p>
+        Towers of steel, buried facilities, and ancient bunkers came to be seen
+        as forbidden or holy spaces. Many tribes believed these places housed
+        restless spirits or remnants of divine power.
+    </p>
+
+    <p>
+        Entering ruins was often associated with death, madness, or corruption —
+        not without reason, as Old World systems were never designed for untrained
+        human interaction.
+    </p>
+
+    <h2 class="section-header">Machines as Living Beings</h2>
+    <p>
+        Machines that roamed the land appeared purposeful, autonomous, and
+        self-repairing. To the people of the New World, this behavior resembled
+        life more than mechanism.
+    </p>
+
+    <p>
+        Tribes interpreted these entities according to their values: guardians,
+        predators, teachers, or punishments sent by higher powers.
+    </p>
+
+    <h2 class="section-header">Faith, Fear, and Control</h2>
+    <p>
+        Belief systems surrounding technology often served practical purposes.
+        Fear discouraged dangerous exploration. Reverence enforced social order.
+        Taboo preserved survival.
+    </p>
+
+    <p>
+        Over generations, these beliefs hardened into doctrine, making truth
+        not merely unknown — but unwelcome.
+    </p>
+
+    <h2 class="section-header">Tribal Interpretations</h2>
+    <ul>
+        <li>
+            <b>Nora</b> — Technology as forbidden origin, sealed within the All-Mother.
+        </li>
+        <li>
+            <b>Banuk</b> — Machines as spirits carrying the song of the world.
+        </li>
+        <li>
+            <b>Carja</b> — Ruins as symbols of lost grandeur and divine right.
+        </li>
+        <li>
+            <b>Oseram</b> — Technology as raw potential, stripped of reverence.
+        </li>
+        <li>
+            <b>Utaru</b> — Old systems as forces of decay disrupting natural cycles.
+        </li>
+        <li>
+            <b>Quen</b> — Technology as scripture, selectively interpreted to justify rule.
+        </li>
+    </ul>
+
+    <h2 class="section-header">The Danger of Partial Truth</h2>
+    <p>
+        In many cases, tribal myths are not entirely wrong — only incomplete.
+        Machines do enforce balance. Ruins are dangerous. Old knowledge can
+        destroy as easily as it can save.
+    </p>
+
+    <p>
+        The tragedy lies in certainty born from ignorance.
+    </p>
+
+    <h2 class="section-header">Aloy and the Shattering of Myth</h2>
+    <p>
+        Aloy represents the first true challenge to technological myth.
+        With access to Old World systems and historical context, she can
+        understand machines as what they are — neither gods nor demons.
+    </p>
+
+    <p>
+        Her presence forces cultures to confront an uncomfortable truth:
+        belief was never protection — understanding was.
+    </p>
+
+    <h2 class="section-header">Legacy of Belief</h2>
+    <p>
+        The New World survives because of myth, not despite it.
+        Fear kept people alive. Stories gave meaning. Faith provided order
+        when truth was unreachable.
+    </p>
+
+    <p>
+        But as knowledge returns, the myths must either evolve —
+        or break.
+    </p>
+
+</article>
+`,
 
 
 
 };
+
+/* Breadcrumb / current article tracking */
+let currentArticleId = null;
+
+function clearArticleHistory() {
+  // Clear only the current article tracking; historical session stacks removed.
+  currentArticleId = null;
+}
+
+function renderBreadcrumbs(container, id) {
+  if (!container) return;
+  // remove old crumbs if present
+  const existing = container.querySelector('.breadcrumbs');
+  if (existing) existing.remove();
+
+  const nav = document.createElement('nav');
+  nav.className = 'breadcrumbs';
+
+  // Home button
+  const homeBtn = document.createElement('button');
+  homeBtn.className = 'crumb home';
+  homeBtn.type = 'button';
+  homeBtn.textContent = 'Home';
+  homeBtn.addEventListener('click', () => {
+    // clear article view and history
+    articleContainer.innerHTML = '';
+    homeSection.style.display = 'flex';
+    homeSection.classList.add('fade-in');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setTimeout(() => homeSection.classList.remove('fade-in'), 400);
+    clearArticleHistory();
+    const backToHomeBtn = document.getElementById('back-to-home');
+    if (backToHomeBtn) backToHomeBtn.hidden = true;
+  });
+  nav.appendChild(homeBtn);
+
+  // NOTE: Session-based forward/back navigation has been removed. We keep a
+  // simple Home button and the current title only.
+
+  // Current title indicator
+  const titleSpan = document.createElement('span');
+  titleSpan.className = 'current-title';
+  titleSpan.textContent = (articles[id]?.match(/<h1[^>]*class=["']title["'][^>]*>([\s\S]*?)<\/h1>/i) || [])[1] || id;
+  nav.appendChild(titleSpan);
+
+  // (no forward button — session forward navigation removed)
+
+  // (single forward button handled above)
+
+  // Insert at the top of the article container
+  container.insertBefore(nav, container.firstChild);
+  // Prevent accidental clicks caused by in-flight mouse events during the
+  // article transition (e.g., mousedown before replace, mouseup after).
+  nav.style.pointerEvents = 'none';
+  setTimeout(() => { try { nav.style.pointerEvents = 'auto'; } catch (e) {} }, 250);
+}
 
 
 
@@ -8543,20 +9761,24 @@ function showSearchMatches(query) {
   }
   
   function getArticleType(id) {
-  if (['acid', 'freeze', 'fire', 'plasma', 'shock', 'purgewater', 'adhesive'].includes(id)) {
-    return 'Element';
+    // Normalize id so comparisons are consistent regardless of
+    // hyphenation, spacing, or case (e.g. "sun-king-avad" vs "sun-king avad").
+    const normalized = String(id).toLowerCase().replace(/-/g, ' ').replace(/\s+/g, ' ').trim();
+
+    const elements = ['acid', 'freeze', 'fire', 'plasma', 'shock', 'purgewater', 'adhesive'];
+    const characters = ['rost', 'gaia', 'sun king avad', 'varl', 'elisabet sobeck', 'aloy', 'erend', 'kotallo', 'sylens', 'tilda'];
+    const lore = ['carja', 'tenakth', 'nora', 'far zenith', 'ted faro', 'utaru', 'nemesis', 'extinction signal', 'cradle facilities', 'the old world', 'the new world', 'technology as myth', 'red raids'];
+    const tribes = ['carja', 'tenakth', 'nora', 'utaru', 'oseram', 'banuk', 'quen'];
+    const subfunctions = ['hades', 'hephaestus', 'apollo', 'artemis', 'minerva', 'aether', 'poseidon', 'demeter', 'eleuthia'];
+
+    if (elements.includes(normalized)) return 'Element';
+    if (characters.includes(normalized)) return 'Character';
+    if (lore.includes(normalized)) return 'Lore';
+    if (tribes.includes(normalized)) return 'Tribe';
+    if (subfunctions.includes(normalized)) return 'Subfunction';
+
+    return 'Machine';
   }
-  if (['rost', 'GAIA', 'sun-king avad', 'varl', 'elisabet sobeck', 'aloy', 'erend', 'kotallo', 'sylens', 'tilda'].includes(id)) {
-    return 'Character'; 
-  }
-  if (['carja', 'tenakth', 'nora', 'far zenith', 'ted faro', 'utaru', 'nemesis', 'extinction signal'].includes(id)) {
-    return 'Lore';
-  }
-  if (['HADES', 'HEPHAESTUS', 'APOLLO', 'ARTEMIS', 'MINERVA', 'AETHER', 'POSIDEON', 'DEMETER'].includes(id)) {
-    return 'Subfunction';
-  }
-  return 'Machine';
-}  
   function matchesCategory(id, query) {
     const type = getArticleType(id).toLowerCase();
     const q = query.toLowerCase();
@@ -8565,7 +9787,7 @@ function showSearchMatches(query) {
     if (q === 'elements' || q === 'element') return type === 'element';
     if (q === 'characters' || q === 'character') return type === 'character';
     if (q === 'lore') return type === 'lore';
-    if (q === 'subfunction') return type === 'subfunction';
+    if (q === 'subfunctions' || q === 'subfunction') return type === 'subfunction';
     return false;
   }
   
@@ -8578,7 +9800,7 @@ function showSearchMatches(query) {
     const categoryMatches = matchesCategory(id, query);
     
     // For category searches, ONLY show category matches
-    if (['machines', 'elements', 'characters', 'lore'].includes(query.toLowerCase())) {
+    if (['machines', 'elements', 'characters', 'lore', 'subfunctions', 'subfunction'].includes(query.toLowerCase())) {
       if (categoryMatches) {
         matches.push({ 
           id, 
@@ -8627,7 +9849,7 @@ function showSearchMatches(query) {
   });
 
   // For category searches, show more results
-  const isCategory = ['machines', 'elements', 'characters', 'lore'].includes(query.toLowerCase());
+  const isCategory = ['machines', 'elements', 'characters', 'lore', 'subfunctions', 'subfunction'].includes(query.toLowerCase());
   const limit = isCategory ? 15 : 8;
   const limitedMatches = matches.slice(0, limit);
 
@@ -8649,10 +9871,14 @@ function showSearchMatches(query) {
       <div class="result-type">${m.type}</div>
     `;
     
+    // NOTE: Do not directly open articles from the search results list.
+    // Clicking a result should populate the search input so the user can
+    // decide how to navigate (prevents accidental inline article viewing).
     item.addEventListener('click', () => {
-      loadArticle(m.id);
-      closeSearchResults();
-      searchBar.value = '';
+      searchBar.value = m.id;
+      searchBar.focus();
+      // Re-dispatch input so the search UI updates to reflect the selection
+      searchBar.dispatchEvent(new Event('input'));
     });
     
     searchResults.appendChild(item);
@@ -8660,7 +9886,9 @@ function showSearchMatches(query) {
 
   if (matches.length > limit) {
     const moreResults = document.createElement('div');
-    moreResults.className = 'no-results';
+    // Use a dedicated class for the "more results" footer so it doesn't
+    // inherit the empty-state icon/animation from `.no-results`.
+    moreResults.className = 'more-results';
     moreResults.textContent = `+${matches.length - limit} more results...`;
     searchResults.appendChild(moreResults);
   }
@@ -8697,9 +9925,11 @@ function lazyLoadArticle(id) {
 }
 
 /* Service Worker Registration */
-if ('serviceWorker' in navigator) {
+/* Service Worker Registration */
+if ('serviceWorker' in navigator && location.protocol !== 'file:') {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js')
+    // register the SW from the same packaged location used in index.html
+    navigator.serviceWorker.register('technical stuff/sw.js')
       .then(registration => {
         console.log('SW registered: ', registration);
       })
@@ -8721,8 +9951,17 @@ function cacheArticleForOffline(articleId, content) {
 }
 
 /* Load article by id (inject into articleContainer) */
-function loadArticle(id) {
-  if (!articles[id]) return;
+function loadArticle(id, opts) {
+  if (typeof window.__isLoadingArticle === 'undefined') window.__isLoadingArticle = false;
+  if (window.__isLoadingArticle) {
+    console.log('[loadArticle] another load in progress, ignoring request for', id);
+    return;
+  }
+  window.__isLoadingArticle = true;
+  console.log('[loadArticle] start', { id, opts, currentArticleId });
+  if (!articles[id]) { console.warn('[loadArticle] no article for id', id); return; }
+  // If already viewing this article, do nothing
+  if (id === currentArticleId) { console.log('[loadArticle] no-op, already current', id); return; }
   
   // Track article view
   trackArticleView(id);
@@ -8742,6 +9981,7 @@ function loadArticle(id) {
   
   // Lazy load the article
   lazyLoadArticle(id).then((content) => {
+    console.log('[loadArticle] lazyLoad resolved for', id, 'contentLen=', content ? content.length : 0);
     // fade out home
     homeSection.classList.add('fade-out');
     
@@ -8751,9 +9991,21 @@ function loadArticle(id) {
       
       // inject article HTML
       articleContainer.innerHTML = content;
-      autoLinkCapitalizedWords(articleContainer, id);
+          // auto-link capitalized words to existing articles
+          if (typeof autoLinkCapitalizedWords === 'function') autoLinkCapitalizedWords(articleContainer, id);
+          // apply synonym-based links
+          if (typeof applySynonymLinks === 'function') applySynonymLinks(articleContainer);
+          // Ensure every generated link has a click handler (defensive fallback)
+          if (typeof bindArticleLinkHandlers === 'function') bindArticleLinkHandlers(articleContainer);
+
+          // Breadcrumbs: we no longer maintain a session history stack — only
+          // track the currently viewed article id for UI purposes.
+          console.log('[loadArticle] setting currentArticleId=', id, 'opts=', opts);
+          currentArticleId = id;
+          console.log('[loadArticle] set currentArticleId=', currentArticleId);
+          renderBreadcrumbs(articleContainer, id);
+          console.log('[loadArticle] breadcrumbs rendered for', id);
       // init UI bits inside article
-      applySynonymLinks(articleContainer);
 
       setupAccordionAndTabs();
 
@@ -8766,8 +10018,35 @@ function loadArticle(id) {
       // Add back to home button and favorite button
       addBackButton();
       addFavoriteButton(id);
+      // finished loading
+      window.__isLoadingArticle = false;
     }, 300);
   }, 100);
+}
+
+// Ensure anchors created anywhere inside an article will navigate correctly.
+function bindArticleLinkHandlers(container) {
+  if (!container) return;
+  const selector = 'a[data-article-link], a.auto-link';
+  container.querySelectorAll(selector).forEach(a => {
+    // Avoid double-binding
+    if (a.__articleHandlerBound) return;
+    a.__articleHandlerBound = true;
+    a.addEventListener('click', (e) => {
+      try {
+        e.preventDefault();
+        const id = a.getAttribute('data-article-link') || (a.getAttribute('href') || '').replace(/^#/, '');
+        if (!id) return;
+        if (typeof loadArticle === 'function' && articles[id]) {
+          loadArticle(id);
+        } else {
+          location.hash = id;
+        }
+      } catch (err) {
+        console.warn('bindArticleLinkHandlers handler failed', err);
+      }
+    });
+  });
 }
 
 /* Add back to home functionality */
@@ -9205,7 +10484,7 @@ function autoLinkCapitalizedWords(container, currentID) {
       acceptNode(node) {
         if (!node.nodeValue || !node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
 
-        const forbidden = ['A','SCRIPT','STYLE','TEXTAREA','CODE','PRE'];
+        const forbidden = ['A','SCRIPT','STYLE','TEXTAREA','CODE','PRE','H1','H2','H3','H4','H5','H6'];
         let parent = node.parentNode;
         while (parent && parent.nodeType === 1) {
           if (forbidden.includes(parent.nodeName)) return NodeFilter.FILTER_REJECT;
@@ -9221,7 +10500,8 @@ function autoLinkCapitalizedWords(container, currentID) {
   let node;
   while (node = walker.nextNode()) nodes.push(node);
 
-  const capitalizedPattern = /([A-Z][A-Za-z0-9]*(?:[ \-][A-Z][A-Za-z0-9]*)*)([.,;:!?)\]\"]?)/g;
+  // Match a capitalized word or Title Case phrase (subsequent words must also be capitalized)
+  const capitalizedPattern = /\b([A-Z][A-Za-z0-9]*(?:[ \-][A-Z][A-Za-z0-9]*)*)([.,;:!?)\]\"]?)/g;
 
   nodes.forEach(textNode => {
     const text = textNode.nodeValue;
@@ -9239,15 +10519,26 @@ function autoLinkCapitalizedWords(container, currentID) {
         frag.appendChild(document.createTextNode(text.slice(lastIndex, match.index)));
       }
 
-      // Generate ID candidates
+      // Generate ID candidates with some tolerant variants
       const candidates = [];
-      candidates.push(slugifyForArticle(wordGroup));             // full phrase
+      const slugified = slugifyForArticle(wordGroup);
+      const lower = wordGroup.toLowerCase();                     // original lowercased phrase
+      candidates.push(slugified);                                // slugified/hyphenated
+      candidates.push(lower);                                    // lowercased with spaces
+      candidates.push(lower.replace(/\s+/g, '-'));              // spaces -> hyphen
+      candidates.push(lower.replace(/-/g, ''));                  // remove hyphens
       const firstWord = wordGroup.split(/\s|-/)[0];              // first segment
       if (firstWord && firstWord !== wordGroup)
         candidates.push(slugifyForArticle(firstWord));
+      // remove duplicates while preserving order
+      const seen = new Set();
+      const uniqCandidates = [];
+      for (const c of candidates) if (c && !seen.has(c)) { seen.add(c); uniqCandidates.push(c); }
+      // swap to use uniqCandidates below
+      const _candidates = uniqCandidates;
 
       let foundID = null;
-      for (const c of candidates) {
+      for (const c of _candidates) {
         if (articleIDs.has(c)) {
           foundID = c;
           break;
@@ -9259,17 +10550,26 @@ function autoLinkCapitalizedWords(container, currentID) {
         frag.appendChild(document.createTextNode(fullMatch));
       } else if (foundID) {
         replacedAnything = true;
+        // autoLink mapping created
 
         const a = document.createElement('a');
         a.href = `#${foundID}`;
-        a.className = 'auto-link';
+        // do not add/modify classes on existing elements — keep anchor minimal
+        a.setAttribute('data-article-link', foundID);
         a.textContent = wordGroup;
-
-        a.addEventListener('click', e => {
+        // Fallback: bind a direct click handler so links work even if delegation
+        // is prevented by other listeners or a service-worker cached script.
+        a.addEventListener('click', (e) => {
           e.preventDefault();
-          if (typeof loadArticle === 'function') loadArticle(foundID);
-          else location.hash = foundID;
+          try {
+            if (typeof loadArticle === 'function') loadArticle(foundID);
+            else location.hash = foundID;
+          } catch (err) {
+            console.warn('Direct article link handler failed', err);
+          }
         });
+        // Diagnostic: ensure anchor receives pointer events and bind a direct handler
+        // diagnostic attributes/handlers removed
 
         frag.appendChild(a);
         if (punct) frag.appendChild(document.createTextNode(punct));
@@ -9294,6 +10594,8 @@ function autoLinkCapitalizedWords(container, currentID) {
       }
     }
   });
+
+  // diagnostic counter removed
 }
 
 // Synonym dictionary: articleID → synonyms you choose
@@ -9362,15 +10664,18 @@ function applySynonymLinks(container) {
                 hasChanges = true;
                 const a = document.createElement('a');
                 a.href = `#${targetArticleId}`;
-                a.className = 'auto-link';
+                // Do not mutate classes on existing elements; use a data attribute for delegation
+                a.setAttribute('data-article-link', targetArticleId);
                 a.textContent = word;
-                
-                a.addEventListener('click', e => {
-                    e.preventDefault();
-                    if (typeof loadArticle === 'function') loadArticle(targetArticleId);
-                    else location.hash = targetArticleId;
-                });
-                
+              a.addEventListener('click', (e) => {
+                e.preventDefault();
+                try {
+                  if (typeof loadArticle === 'function') loadArticle(targetArticleId);
+                  else location.hash = targetArticleId;
+                } catch (err) {
+                  console.warn('Direct synonym link handler failed', err);
+                }
+              });
                 frag.appendChild(a);
             } else {
                 frag.appendChild(document.createTextNode(word));
@@ -9681,3 +10986,502 @@ function showNextTip() {
 if (tipCards.length > 0) {
   setInterval(showNextTip, 20000); // Change tip every 20 seconds
 }
+
+/* Enhanced search with fuzzy matching and better UX */
+class EnhancedSearch {
+  constructor() {
+    this.searchIndex = new Map();
+    this.searchHistory = JSON.parse(localStorage.getItem('searchHistory') || '[]');
+    this.maxHistory = 10;
+    this.resultCache = new Map();
+    this.suggestions = new Set();
+    this.init();
+  }
+
+  init() {
+    this.buildSearchIndex();
+    this.setupSearchUI();
+  }
+
+  buildSearchIndex() {
+    Object.entries(articles).forEach(([id, content]) => {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(content, 'text/html');
+      
+      const title = doc.querySelector('.title')?.textContent || id;
+      const type = doc.querySelector('.infobox')?.textContent || '';
+      const tags = Array.from(doc.querySelectorAll('.tag')).map(t => t.textContent);
+      const textContent = doc.body.textContent.toLowerCase();
+      
+      this.searchIndex.set(id, {
+        title,
+        type,
+        tags,
+        content: textContent,
+        keywords: this.extractKeywords(textContent)
+      });
+      
+      this.suggestions.add(title.toLowerCase());
+      tags.forEach(tag => this.suggestions.add(tag.toLowerCase()));
+    });
+  }
+
+  extractKeywords(text) {
+    const commonWords = new Set(['the', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by', 'is', 'are', 'was', 'were', 'be', 'been', 'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could', 'should', 'may', 'might', 'can', 'cannot', 'this', 'that', 'these', 'those']);
+    
+    return text
+      .split(/\W+/)
+      .filter(word => word.length > 2 && !commonWords.has(word))
+      .slice(0, 20);
+  }
+
+  fuzzyMatch(query, target, threshold = 0.6) {
+    if (!query || !target) return 0;
+    
+    query = query.toLowerCase();
+    target = target.toLowerCase();
+    
+    if (target.includes(query)) return 1;
+    
+    const matrix = Array(query.length + 1).fill().map(() => Array(target.length + 1).fill(0));
+    
+    for (let i = 0; i <= query.length; i++) matrix[i][0] = i;
+    for (let j = 0; j <= target.length; j++) matrix[0][j] = j;
+    
+    for (let i = 1; i <= query.length; i++) {
+      for (let j = 1; j <= target.length; j++) {
+        const cost = query[i - 1] === target[j - 1] ? 0 : 1;
+        matrix[i][j] = Math.min(
+          matrix[i - 1][j] + 1,
+          matrix[i][j - 1] + 1,
+          matrix[i - 1][j - 1] + cost
+        );
+      }
+    }
+    
+    const distance = matrix[query.length][target.length];
+    const similarity = 1 - distance / Math.max(query.length, target.length);
+    
+    return similarity >= threshold ? similarity : 0;
+  }
+
+  search(query) {
+    if (!query || query.length < 2) return [];
+    
+    const cacheKey = query.toLowerCase();
+    if (this.resultCache.has(cacheKey)) {
+      return this.resultCache.get(cacheKey);
+    }
+    
+    const results = [];
+    
+    this.searchIndex.forEach((data, id) => {
+      let score = 0;
+      let matchType = '';
+      
+      if (data.title.toLowerCase().includes(query.toLowerCase())) {
+        score += 10;
+        matchType = 'title';
+      }
+      
+      const titleScore = this.fuzzyMatch(query, data.title);
+      if (titleScore > 0) {
+        score += titleScore * 8;
+        matchType = matchType || 'title-fuzzy';
+      }
+      
+      data.tags.forEach(tag => {
+        if (tag.toLowerCase().includes(query.toLowerCase())) {
+          score += 5;
+          matchType = matchType || 'tag';
+        }
+      });
+      
+      if (data.content.includes(query.toLowerCase())) {
+        score += 2;
+        matchType = matchType || 'content';
+      }
+      
+      data.keywords.forEach(keyword => {
+        const keywordScore = this.fuzzyMatch(query, keyword);
+        if (keywordScore > 0) {
+          score += keywordScore;
+          matchType = matchType || 'keyword';
+        }
+      });
+      
+      if (score > 0) {
+        results.push({
+          id,
+          title: data.title,
+          type: data.type,
+          score,
+          matchType
+        });
+      }
+    });
+    
+    const finalResults = results
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 8);
+    
+    this.resultCache.set(cacheKey, finalResults);
+    if (this.resultCache.size > 50) {
+      const firstKey = this.resultCache.keys().next().value;
+      this.resultCache.delete(firstKey);
+    }
+    
+    return finalResults;
+  }
+
+  setupSearchUI() {
+    if (!searchBar || !searchResults) return;
+    
+    let searchTimeout;
+    
+    searchBar.addEventListener('input', (e) => {
+      clearTimeout(searchTimeout);
+      const query = e.target.value.trim();
+      
+      if (query.length === 0) {
+        searchResults.hidden = true;
+        return;
+      }
+      
+      if (query.length === 1) {
+        this.showSuggestions(query);
+        return;
+      }
+      
+      searchTimeout = setTimeout(() => {
+        this.displayResults(query);
+      }, 150);
+    });
+    
+    searchBar.addEventListener('keydown', (e) => {
+      const items = searchResults.querySelectorAll('.result-item');
+      const current = searchResults.querySelector('.result-item.highlighted');
+      
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        const next = current?.nextElementSibling || items[0];
+        this.highlightResult(next);
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        const prev = current?.previousElementSibling || items[items.length - 1];
+        this.highlightResult(prev);
+      } else if (e.key === 'Enter') {
+        e.preventDefault();
+        if (current) {
+          current.click();
+        }
+      } else if (e.key === 'Escape') {
+        searchResults.hidden = true;
+        searchBar.blur();
+      }
+    });
+    
+    document.addEventListener('click', (e) => {
+      if (!searchBar.contains(e.target) && !searchResults.contains(e.target)) {
+        searchResults.hidden = true;
+      }
+    });
+    
+    if (window.innerWidth <= 768) {
+      searchBar.addEventListener('focus', () => {
+        setTimeout(() => searchBar.scrollIntoView({ behavior: 'smooth', block: 'center' }), 300);
+      });
+    }
+  }
+
+  displayResults(query) {
+    const results = this.search(query);
+    
+    if (results.length === 0) {
+      searchResults.innerHTML = '<div class="no-results">No results found</div>';
+      searchResults.hidden = false;
+      return;
+    }
+    
+    const html = results.map(result => `
+      <div class="result-item" data-id="${result.id}" data-match-type="${result.matchType}">
+        <div class="result-content">
+          <div class="result-title">${this.highlightMatch(result.title, query)}</div>
+          <div class="result-meta">${result.type}</div>
+        </div>
+        <div class="result-type">${result.type}</div>
+      </div>
+    `).join('');
+    
+    searchResults.innerHTML = html;
+    searchResults.hidden = false;
+    
+    searchResults.querySelectorAll('.result-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const id = item.dataset.id;
+        this.addToHistory(query, id);
+        loadArticle(id);
+        searchResults.hidden = true;
+        searchBar.value = '';
+      });
+    });
+  }
+
+  highlightMatch(text, query) {
+    const regex = new RegExp(`(${query})`, 'gi');
+    return text.replace(regex, '<span class="search-hit">$1</span>');
+  }
+
+  highlightResult(item) {
+    document.querySelectorAll('.result-item').forEach(el => el.classList.remove('highlighted'));
+    if (item) item.classList.add('highlighted');
+  }
+
+  addToHistory(query, resultId) {
+    const entry = { query, resultId, timestamp: Date.now() };
+    this.searchHistory = this.searchHistory.filter(h => h.query !== query);
+    this.searchHistory.unshift(entry);
+    this.searchHistory = this.searchHistory.slice(0, this.maxHistory);
+    localStorage.setItem('searchHistory', JSON.stringify(this.searchHistory));
+  }
+
+  showSuggestions(query) {
+    const matches = Array.from(this.suggestions)
+      .filter(s => s.startsWith(query.toLowerCase()))
+      .slice(0, 5);
+    
+    if (matches.length === 0) return;
+    
+    const html = matches.map(match => `
+      <div class="suggestion-item" data-query="${match}">
+        <span class="suggestion-text">${match}</span>
+      </div>
+    `).join('');
+    
+    searchResults.innerHTML = html;
+    searchResults.hidden = false;
+    
+    searchResults.querySelectorAll('.suggestion-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const query = item.dataset.query;
+        searchBar.value = query;
+        this.displayResults(query);
+      });
+    });
+  }
+}
+
+// Initialize enhanced search when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  if (typeof enhancedSearch === 'undefined') {
+    window.enhancedSearch = new EnhancedSearch();
+  }
+});
+
+/* =====================
+   Enhanced Performance Manager
+   Merged from performance-enhanced.js
+   ===================== */
+class EnhancedPerformanceManager {
+  constructor() {
+    this.imageCache = new Map();
+    this.lazyImages = [];
+    this.intersectionObserver = null;
+    this.searchCache = new Map();
+    this.searchDebounceTimer = null;
+    this.virtualScrollEnabled = false;
+    this.prefetchQueue = [];
+    this.init();
+  }
+
+  init() {
+    this.setupLazyLoading();
+    this.preloadCriticalResources();
+    this.optimizeScrolling();
+    this.setupSearchOptimizations();
+    this.enableResourceHints();
+    this.setupMemoryManagement();
+  }
+
+  setupLazyLoading() {
+    if ('IntersectionObserver' in window) {
+      this.intersectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            this.loadImage(img).catch(() => {});
+          }
+        });
+      }, {
+        rootMargin: '50px 0px',
+        threshold: 0.05
+      });
+
+      // Observe all lazy images (img[data-src])
+      document.querySelectorAll('img[data-src]').forEach(img => {
+        img.classList.add('lazy');
+        this.intersectionObserver.observe(img);
+      });
+    }
+  }
+
+  loadImage(img) {
+    return new Promise((resolve, reject) => {
+      const imageUrl = img.dataset.src;
+      if (!imageUrl) return resolve();
+      if (this.imageCache.has(imageUrl)) {
+        img.src = imageUrl;
+        img.classList.remove('lazy');
+        img.classList.add('lazy-loaded');
+        this.intersectionObserver && this.intersectionObserver.unobserve(img);
+        resolve();
+        return;
+      }
+
+      const tempImg = new Image();
+      tempImg.onload = () => {
+        img.src = imageUrl;
+        img.classList.remove('lazy');
+        img.classList.add('lazy-loaded');
+        this.imageCache.set(imageUrl, true);
+        this.intersectionObserver && this.intersectionObserver.unobserve(img);
+        resolve();
+      };
+      tempImg.onerror = () => {
+        this.imageCache.set(imageUrl, false);
+        reject(new Error('image failed to load'));
+      };
+      tempImg.src = imageUrl;
+    });
+  }
+
+  preloadCriticalResources() {
+    // Only preload the critical 192 icon and styles; the 512 icon is large and
+    // may not be used immediately, avoiding preload prevents "preloaded but not used" warnings.
+    const criticalResources = [
+      { href: 'images/icon-192.png', as: 'image' },
+      { href: 'css/Variables.css', as: 'style' },
+      { href: 'css/global.css', as: 'style' }
+    ];
+
+    criticalResources.forEach(resource => {
+      const link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = resource.as;
+      link.href = resource.href;
+      if (resource.as === 'style') link.onload = () => link.rel = 'stylesheet';
+      document.head.appendChild(link);
+    });
+  }
+
+  optimizeScrolling() {
+    let ticking = false;
+    let lastScrollY = 0;
+    const updateScrollElements = () => {
+      const scrollY = window.pageYOffset;
+      const scrollDirection = scrollY > lastScrollY ? 'down' : 'up';
+      this.updateNavigationElements(scrollY);
+      this.handleScrollPrefetch(scrollY, scrollDirection);
+      lastScrollY = scrollY;
+      ticking = false;
+    };
+    window.addEventListener('scroll', () => {
+      if (!ticking) { requestAnimationFrame(updateScrollElements); ticking = true; }
+    }, { passive: true });
+  }
+
+  updateNavigationElements(scrollY) {
+    const backToTop = document.getElementById('back-to-top');
+    const backToHome = document.getElementById('back-to-home');
+    const homeSectionEl = document.getElementById('home-section');
+    if (backToTop) backToTop.hidden = scrollY < 300;
+    if (backToHome && homeSectionEl) backToHome.hidden = scrollY < 300 || (homeSectionEl.style.display !== 'none');
+  }
+
+  handleScrollPrefetch(scrollY, direction) {
+    if (direction === 'down' && scrollY > 500 && this.prefetchQueue.length > 0) {
+      const nextArticle = this.prefetchQueue.shift();
+      this.prefetchArticle(nextArticle);
+    }
+  }
+
+  setupSearchOptimizations() {
+    const searchInput = document.getElementById('searchBar');
+    if (!searchInput) return;
+    searchInput.addEventListener('input', (e) => {
+      clearTimeout(this.searchDebounceTimer);
+      this.searchDebounceTimer = setTimeout(() => this.performOptimizedSearch(e.target.value), 150);
+    });
+    searchInput.addEventListener('keydown', (e) => this.handleSearchKeyboard(e));
+  }
+
+  performOptimizedSearch(query) {
+    if (query.length < 2) return;
+    if (this.searchCache.has(query)) { this.displaySearchResults(this.searchCache.get(query)); return; }
+    if (window.Worker) this.searchWithWorker(query); else this.searchWithMainThread(query);
+  }
+
+  searchWithWorker(query) { this.searchWithMainThread(query); }
+  searchWithMainThread(query) { const results = this.fuzzySearch(query); this.searchCache.set(query, results); this.displaySearchResults(results); }
+
+  fuzzySearch(query) {
+    const out = [];
+    const q = query.toLowerCase();
+    for (const id of Object.keys(articles)) {
+      const titleMatch = articles[id].match(/<h1[^>]*class=["']title["'][^>]*>([\s\S]*?)<\/h1>/i);
+      const title = titleMatch ? titleMatch[1].toLowerCase() : id.toLowerCase();
+      if (title.includes(q)) out.push({ id, title });
+    }
+    return out.slice(0, 30);
+  }
+
+  displaySearchResults(results) {
+    const resultsContainer = document.getElementById('search-results');
+    if (!resultsContainer) return; if (!results || results.length === 0) { resultsContainer.hidden = true; return; }
+    resultsContainer.innerHTML = results.map(r => `<div class="result-item" data-article="${r.id}">${r.title}</div>`).join('');
+    resultsContainer.hidden = false;
+  }
+
+  handleSearchKeyboard(e) {
+    const results = document.querySelectorAll('#search-results .result-item');
+    let currentFocus = document.querySelector('.keyboard-focused');
+    switch(e.key) {
+      case 'ArrowDown': e.preventDefault(); this.focusNextResult(results, currentFocus, 1); break;
+      case 'ArrowUp': e.preventDefault(); this.focusNextResult(results, currentFocus, -1); break;
+      case 'Enter': if (currentFocus) currentFocus.click(); break;
+      case 'Escape': this.clearSearchFocus(); break;
+    }
+  }
+
+  focusNextResult(results, current, direction) {
+    if (current) current.classList.remove('keyboard-focused');
+    let index = current ? Array.from(results).indexOf(current) : -1; index += direction;
+    if (index < 0) index = results.length - 1; if (index >= results.length) index = 0;
+    if (results[index]) { results[index].classList.add('keyboard-focused'); results[index].scrollIntoView({ block: 'nearest' }); }
+  }
+
+  clearSearchFocus() { document.querySelectorAll('.keyboard-focused').forEach(el => el.classList.remove('keyboard-focused')); }
+
+  enableResourceHints() {
+    const dnsPrefetch = ['fonts.googleapis.com', 'fonts.gstatic.com']; dnsPrefetch.forEach(domain => { const link = document.createElement('link'); link.rel = 'dns-prefetch'; link.href = `//${domain}`; document.head.appendChild(link); });
+    const preconnect = ['https://fonts.googleapis.com']; preconnect.forEach(origin => { const link = document.createElement('link'); link.rel = 'preconnect'; link.href = origin; link.crossOrigin = 'anonymous'; document.head.appendChild(link); });
+  }
+
+  setupMemoryManagement() {
+    setInterval(() => { if (this.searchCache.size > 100) { const entries = Array.from(this.searchCache.entries()); const recentEntries = entries.slice(-50); this.searchCache.clear(); recentEntries.forEach(([key, value]) => this.searchCache.set(key, value)); } }, 300000);
+  }
+
+  prefetchArticle(articleId) {
+    if (!articleId || this.imageCache.has(`article-${articleId}`)) return;
+    fetch(`#${articleId}`).then(() => this.imageCache.set(`article-${articleId}`, true)).catch(() => {});
+  }
+
+  debounce(func, wait) { let timeout; return function executedFunction(...args) { const later = () => { clearTimeout(timeout); func(...args); }; clearTimeout(timeout); timeout = setTimeout(later, wait); }; }
+  throttle(func, limit) { let inThrottle; return function() { const args = arguments; const context = this; if (!inThrottle) { func.apply(context, args); inThrottle = true; setTimeout(() => inThrottle = false, limit); } }; }
+  measurePerformance(name, fn) { const start = performance.now(); const result = fn(); const end = performance.now(); console.log(`${name} took ${end - start} milliseconds`); return result; }
+  getMemoryUsage() { if (performance.memory) { return { used: Math.round(performance.memory.usedJSHeapSize / 1048576), total: Math.round(performance.memory.totalJSHeapSize / 1048576), limit: Math.round(performance.memory.jsHeapSizeLimit / 1048576) }; } return null; }
+}
+
+// Initialize and expose
+const enhancedPerfManager = new EnhancedPerformanceManager();
+window.enhancedPerfManager = enhancedPerfManager;

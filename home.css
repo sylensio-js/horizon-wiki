@@ -136,6 +136,12 @@
   .quick-links { gap: 8px; }
   .quick-link { font-size: 12px; padding: 6px 10px; }
 }
+
+/* Mobile accessibility improvements merged from accessibility.css */
+@media (max-width: 768px) {
+  button, .btn, .result-item { min-height: 48px; padding: 12px 16px; }
+  .category-grid { gap: 16px; }
+}
 .quick-link { background: rgba(20, 40, 60, 0.3); border: 1px solid rgba(80, 150, 228, 0.2); color: var(--accent); padding: 8px 12px; border-radius: 6px; font-size: 13px; cursor: pointer; transition: all 0.2s ease; }
 .quick-link:hover { background: rgba(20, 40, 60, 0.5); border-color: var(--accent-gold-soft); transform: translateY(-1px); }
 .no-recent { color: rgba(234, 243, 255, 0.5); font-style: italic; padding: 12px; }
@@ -360,7 +366,8 @@
   width:46px;
   height:46px;
   border-radius:12px;
-  background-image: url('images/icon.ico');
+  /* use packaged icon from images/ */
+  background-image: url('../images/icon-192.png');
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
@@ -371,6 +378,8 @@
 /* Auto-link styling preserved & harmonized */
 .auto-link { color: var(--accent-gold); font-weight:600; text-decoration:none; cursor:pointer; transition: color .18s ease, text-shadow .18s ease, background-color .18s ease, padding .15s ease, border-radius .15s ease; border-radius:4px; padding:2px 4px; }
 .auto-link:hover { color:#fff7d0; background: rgba(242,197,124,0.16); text-shadow: 0 0 8px rgba(242,197,124,0.55); border-radius:6px; }
+/* Ensure .auto-link anchors sit above overlays and are clickable */
+.auto-link { position: relative; z-index: 10; }
 
 /* Back button */
 .back-home { background: rgba(20, 40, 60, 0.4); border: 1px solid var(--accent-gold-soft); color: var(--accent); padding: 8px 16px; border-radius: 6px; margin-bottom: 20px; cursor: pointer; transition: all 0.2s ease; }

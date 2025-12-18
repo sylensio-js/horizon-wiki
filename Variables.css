@@ -55,6 +55,23 @@
   --glow-strength: 0.55;
 }
 
+/* High contrast mode overrides (merged from accessibility.css) */
+@media (prefers-contrast: high) {
+  :root {
+    --accent-gold: #ffdd44;
+    --accent-gold-dark: #cc9900;
+    --muted: #ffffff;
+  }
+}
+
+/* Color-scheme tweaks */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-forest-dark: #000811;
+    --bg-forest-deep: #000510;
+  }
+}
+
 /* Global resets */
 * { box-sizing: border-box; margin:0; padding:0; }
 html,body { height:100%; }
