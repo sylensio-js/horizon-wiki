@@ -4,20 +4,20 @@ const RUNTIME_CACHE = 'runtime-cache-v1';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
-  '/css/Variables.css',
-  '/css/global.css',
-  '/css/header.css',
-  '/css/home.css',
-  '/css/articles.css',
-  '/css/light-theme.css',
-  '/technical%20stuff/script.js',
-  '/technical%20stuff/manifest.json',
-  '/images/icon-192.png',
-  '/images/icon-512.png',
+  '/Variables.css',
+  '/global.css',
+  '/header.css',
+  '/home.css',
+  '/articles.css',
+  '/light-theme.css',
+  '/script.js',
+  '/manifest.json',
+  '/icon-192.png',
+  '/icon-512.png',
 ];
 
 const CACHE_STRATEGIES = {
-  static: ['/css/', '/images/', '/technical%20stuff/script.js'],
+  static: ['/', '/', '/script.js'],
   networkFirst: ['/api/', '.json'],
   cacheFirst: ['.png', '.jpg', '.jpeg', '.gif', '.webp', '.svg']
 };
